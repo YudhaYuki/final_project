@@ -1,0 +1,58 @@
+.bdo-nav {
+	background-color: #730074;
+
+	&__link {
+    color: white;
+    &:hover {
+        color: #6CFF19;
+    }
+ }
+}
+
+
+.bdo-footer {
+	background-color: #730074;
+
+&__link {
+    color: white;
+    &:hover {
+        color: #6CFF19;
+    }
+ }
+
+}
+
+.bdo-works {
+    text-align: center;
+}
+
+
+.bdo-chooser {
+    background-size: cover;
+    background-color: #FFE8B8;
+    background-image: url('/img/bgjump.jpg');
+    background-position: center 20%;
+    padding-top: 20vh;
+
+
+    &__form {
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 100%;
+    text-align: left;
+    margin: 10px 0;
+    bottom: -20px;
+    font-size: 13px;
+    font-weight: 700;
+        background-color: rgba(108, 255, 25, 0.5);
+
+        @include media-breakpoint-up(md){
+            max-width: 75%;
+        }
+        @include media-breakpoint-up(lg){
+            max-width: 50%;
+        }
+    }
+
+ 
+}
