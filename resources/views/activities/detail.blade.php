@@ -6,11 +6,26 @@
 
 <h1>{{ $activity->name }}</h1>
 
-<div class="price">{{ $activity->price }}</div>
-
+Description :<br>
 <p class="description">
 {{ $activity->description }}
 </p>
+
+Picture :<br>
+<p class="picture">
+{{ $activity->picture }}
+</p>
+
+Provider : <br>
+<p class="picture">
+{{ $activity->company_provider }}
+</p>
+
+Price :<br>
+<div class="price">{{ $activity->price }}</div>
+
+Activity Category ID :<br>
+<div class="activity_category_id">{{ $activity->activity_category_id }}</div>
 
 
 
