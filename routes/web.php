@@ -23,7 +23,7 @@
 // Route::get('test/create', 'testController@create');
     
 // when the user comes to the URL /movies, run the movies_homepage method of the indexController
-Route::get('/movies', 'indexController@homepage');
+Route::get('/', 'indexController@homepage');
 
 Route::get('/activities/list', 'activityController@listing');
 

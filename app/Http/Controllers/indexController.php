@@ -10,7 +10,7 @@ class indexController extends Controller
 
     public function homepage()
     {
-        $view = view('wrapper');
+        $view = view('homepage');
         return $view;
     }
 }
