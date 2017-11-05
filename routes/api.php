@@ -16,3 +16,13 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+Route::get('activity/suggest', 'Api\MovieController@suggest');
+
+Route::resource('movie', 'Api\MovieController', [
+    'except' => ['create', 'edit']
+]);
+
+
+
