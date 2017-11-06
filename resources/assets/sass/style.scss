@@ -1,3 +1,32 @@
-h2 {
-color: red;
+
+.showcase {
+    background: url(/images/prague-1119791_1280.jpg) no-repeat center center fixed;
+    padding: 130px 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    .container{
+        background: #fff;
+        opacity: 0.8;
+        padding: 40px 30px 40px 30px;
+        margin-top: 7%;
+        width:50%;
+        height: 250px;
+    }
 }
+
+.bdo-btn{
+    background-color: #6CFF19;
+    width: 150px;
+    margin-top: 16%;
+}
+
+.bump-to-left {
+    margin-right: 100px;
+}
+
+
+
+
