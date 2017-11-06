@@ -9,7 +9,7 @@
     @foreach($activities as $activity)
 
         <div class="row">
-        <div class="col-12">
+        <div class="col-sm-4 col-sm-3">
 
             <div class="card" style="width: 20rem;">
                 <img class="card-img-top" src="{{ asset('uploads/' .$activity->picture) }}" alt="Card image cap">
@@ -31,7 +31,7 @@
         </a>
     </li> 
     -->
-    
+
     @endforeach
 
 @endsection

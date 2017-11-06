@@ -2,6 +2,8 @@
 
 @section('content')
 
+<div class="container">
+
 <form action="" enctype="multipart/form-data" method="post">
 
     {{ csrf_field() }}
@@ -46,5 +48,7 @@
     </div>
 
 </form>
+
+</div>
 
 @endsection
