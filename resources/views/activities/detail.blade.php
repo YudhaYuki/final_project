@@ -13,7 +13,7 @@ Description :<br>
 
 Picture :<br>
 <p class="picture">
-{{ $activity->picture }}
+{{ asset($activity->picture) }}
 </p>
 
 Provider : <br>
