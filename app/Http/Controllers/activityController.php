@@ -85,7 +85,19 @@ class activityController extends Controller
             
             // save the movie
             $activity->save();
-    
+
+            if(request()->hasFile('picture'))
+            {
+                // handle file upload
+                $file = request()->file('picture');
+            
+                // store the file on the disk uploads in subfolder actors
+                // with a hashed unique name
+                $filepath = $file->store('activities', 'uploads');
+                $activity->picture = $filepath;
+                $activity->save();
+            }
+
             // inform the user of success
             // \Session::flash('success_message', 'The movie was successfully saved!');
             session()->flash('success_message', 'The activity was successfully saved!');

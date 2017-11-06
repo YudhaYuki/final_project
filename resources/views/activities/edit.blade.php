@@ -2,7 +2,7 @@
 
 @section('content')
 
-<form action="" method="post">
+<form action="" enctype="multipart/form-data" method="post">
 
     {{ csrf_field() }}
 
@@ -20,6 +20,10 @@
         <label for="picture">Picture:</label><br>
         <input class="form-control" type="file" name="picture" id="picture">
     </div>
+
+    @if($activity->getImageUrl())
+        <img src="{{ $activity->getImageUrl() }}" />
+    @endif
 
     <div class="form-group">
         <label for="company_provider">Company provider:</label><br>

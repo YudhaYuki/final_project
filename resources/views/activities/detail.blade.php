@@ -13,11 +13,11 @@ Description :<br>
 
 Picture :<br>
 <p class="picture">
-{{ asset($activity->picture) }}
+<img src="{{ asset('uploads/' .$activity->picture) }}">
 </p>
 
 Provider : <br>
-<p class="picture">
+<p class="provider">
 {{ $activity->company_provider }}
 </p>
 
