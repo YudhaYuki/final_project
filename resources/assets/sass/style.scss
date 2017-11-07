@@ -7,28 +7,37 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
    }
 
-.showcase {
+.hero {
     background: url(/images/prague-1119791_1280.jpg) no-repeat center center fixed;
     padding: 130px 0;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
 
-    .container{
-        background: #fff;
-        opacity: 0.8;
-        padding: 40px 30px 40px 30px;
-        margin-top: 7%;
-        width:50%;
-        height: 250px;
-    }
+.form {
+    background: #fff;
+    opacity: 0.9;
+    padding: 40px 30px 40px 30px;
+    margin-top: 7%;
+    width:50%;
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+#datepicker{
+    width: 190px;
 }
 
 .bdo-btn{
     background-color: #6CFF19;
-    width: 150px;
-    margin-top:16%;
+    width: 100px;
+    margin-left: 20px;
+    margin-top:22%;
+    opacity: 2;
 }
 
 .bdo-next {
@@ -37,9 +46,66 @@
     float:right;
 }
 
-#datepicker{
-    margin-top:16%;
+.steps .fa {
+    font-size: 1.6em;
 }
+
+
+@media (max-width: 34em) {
+        
+.form {
+    padding: 10px 10px 10px 10px;
+    width:95%;
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.bdo-banner h1{
+    font-size: 1.2em;
+}
+
+#datepicker{
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bdo-btn{
+    width: 75%;
+    margin-left: 0;
+    margin-top:2%;
+    opacity: 2;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label {
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bdo-group {
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+h3 {
+    font-size: 1.1em;
+}
+
+}
+
 
 
 
