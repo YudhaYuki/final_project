@@ -1,3 +1,12 @@
+.navbar {
+  width: 100%;
+  background: #fff !important;
+  padding: 2%;
+  z-index: 10;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
 .showcase {
   background: url(/images/prague-1119791_1280.jpg) no-repeat center center fixed;
   padding: 130px 0;
