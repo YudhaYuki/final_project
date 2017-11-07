@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BIGDAYOUT</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
@@ -22,23 +23,26 @@
 <div id="nav-section">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
+
     <a class="navbar-brand" href={{ url('/') }}><img style="width:100px;" src="/images/test_logo.png"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
+
         
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item active">
-                <a class="nav-link" href="#">How It Works</a>
+                <a class="nav-link" href="{{ action('HomeController@how') }}">How It Works</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">FAQ</a>
+                <a class="nav-link" href="{{ action('HomeController@faq') }}">FAQ</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="{{ action('HomeController@cont') }}">Contact</a>
                 </li>
             </ul>
+
 
             <ul class="navbar-nav justify-content-end">
                 <li class="nav-item">
@@ -51,10 +55,29 @@
                 <a class="nav-link bump-to-left" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                 </li>
             </ul>
+            @if (Route::has('login'))
+                <div class="top-right links">
+                    @auth
+                        <a href="{{ url('/home') }}">Home</a>
+                    @else
+                        <a href="{{ route('login') }}">Login</a>
+                        <a href="{{ route('register') }}">Register</a>
+                    @endauth
+                </div>
+            @endif
+
+    @if(session()->has('success_message'))
+        <div class="alert alert-success">
+            {{ session()->get('success_message') }}
+        </div>
+    @endif
+
         </div>
     </div>
     </nav>
 </div>
+
+
 
 <!-- 
 @if (Route::has('login'))

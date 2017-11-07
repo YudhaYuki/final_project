@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="form-group">
-                    <label for="exampleFormControlSelect1">Example select</label>
+                    <label for="exampleFormControlSelect1">Group Size</label>
                         <select class="form-control" id="exampleFormControlSelect1">
                             <option>1</option>
                             <option>2</option>
@@ -20,19 +20,10 @@
                     </div>
                 </div>
             <div class="col-md-4">
-            <div class="form-group">
-                    <label for="exampleFormControlSelect1">Example select</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
+                    <input type="date" class="form-control" id="datepicker">
             </div>
             <div class="col-md-4">
-            <a href="#review" class="btn btn-primary bdo-btn">Let's Go</a>
+            <a href="{{ action('activityController@listing') }}" class="btn btn-primary bdo-btn">Let's Go</a>
             <div>
             </div><!--closes row-->
         </div>
