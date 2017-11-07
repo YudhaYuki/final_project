@@ -28,6 +28,15 @@
     margin-right:auto;
 }
 
+.bdo-banner {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.steps .bdo-banner h2 {
+    color: #6CFF19;
+    font-size: 3em;
+}
+
 #datepicker{
     width: 190px;
 }
@@ -40,14 +49,45 @@
     opacity: 2;
 }
 
+.bdo-btn:hover {
+    background-color: #730074;
+}
+
 .bdo-next {
     background-color: #6CFF19;
     width: 150px;
     float:right;
 }
 
+.bdo-learn {
+    background-color: #6CFF19;
+    width: 150px;
+    text-transform: uppercase;
+}
+
+.bdo-learn:hover {
+    background-color: #730074;
+}
+
 .steps .fa {
     font-size: 1.6em;
+    color:#730074;
+}
+
+.incentive {
+    background-color: #202020;
+    color: #fff;
+}
+
+.bdo-why {
+    margin: 40% 0 40% 0;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.bdo-why span{
+    font-size: 3em;
+    font-family: 'Permanent Marker', cursive;
+    color: #6CFF19;
 }
 
 
@@ -97,11 +137,17 @@ label {
     margin-right: auto;
 }
 
-h2 {
-    font-size: 1.4em;
+.steps .bdo-banner h2 {
+    color: #6CFF19;
+    font-size: 1.8em;
 }
 h3 {
     font-size: 1.1em;
+}
+
+.bdo-why {
+    margin: 5% 0 5% 0;
+    font-family: 'Gloria Hallelujah', cursive;
 }
 
 }

@@ -45,44 +45,94 @@
 
 
 
-    <div class="steps">
-        <div class="container mt-5 mb-3">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2>How It Works</h2>
+<div class="steps">
+    <div class="container mt-5 mb-3">
+        <div class="row">
+            <div class="col-md-12 text-center bdo-banner">
+                <h2>How It Works</h2>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <div class="steps">
+                    <h3 class="bdo-banner">Fill Out <br>Group Info Form</h3>
+                    <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, est doloribus quas neque magnam maxime animi perferendis quis alias a quidem quos corporis explicabo recusandae laudantium aliquid earum aperiam vitae.</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="steps">
+                    <h3 class="bdo-banner">Select/Deselect Your Favourite Activities</h3>
+                    <i class="fa fa-mouse-pointer" aria-hidden="true"></i>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, est doloribus quas neque magnam maxime animi perferendis quis alias a quidem quos corporis explicabo recusandae laudantium aliquid earum aperiam vitae.</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="steps">
+                    <h3 class="bdo-banner">Register With The Good Folks At BigDayOut!</h3>
+                    <i class="fa fa-registered" aria-hidden="true"></i>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, est doloribus quas neque magnam maxime animi perferendis quis alias a quidem quos corporis explicabo recusandae laudantium aliquid earum aperiam vitae.</p>
                 </div>
             </div>
         </div>
     </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-4 text-center">
-            <div class="steps">
-                <h3>Fill Out <br>Group Info Form</h3>
-                <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, est doloribus quas neque magnam maxime animi perferendis quis alias a quidem quos corporis explicabo recusandae laudantium aliquid earum aperiam vitae.</p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="learn text-center mb-5">
+                    <a href="{{ action('HomeController@faq') }}" class="btn btn-primary bdo-learn">Learn More</a>
+                </div>
             </div>
         </div>
-        <div class="col-md-4 text-center">
-            <div class="steps">
-                <h3>Select/Deselect Your Favourite Activities</h3>
-                <i class="fa fa-mouse-pointer" aria-hidden="true"></i>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, est doloribus quas neque magnam maxime animi perferendis quis alias a quidem quos corporis explicabo recusandae laudantium aliquid earum aperiam vitae.</p>
+    </div>
+</div><!--closes steps section -->
+
+
+  
+
+
+
+<div class="incentive">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="bdo-why text-center">
+                    <span>1</span>
+                    <h4>Cool Destinations</h4>
+                </div>
             </div>
-        </div>
-        <div class="col-md-4 text-center">
-            <div class="steps">
-                <h3>Register With The Good Folks At BigDayOut!</h3>
-                <i class="fa fa-registered" aria-hidden="true"></i>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, est doloribus quas neque magnam maxime animi perferendis quis alias a quidem quos corporis explicabo recusandae laudantium aliquid earum aperiam vitae.</p>
+            <div class="col-md-3">
+                <div class="bdo-why text-center">
+                    <span>2</span>
+                    <h4>Quality Activities</h4>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="bdo-why text-center">
+                    <span>3</span>
+                    <h4>The Best Price</h4>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="bdo-why text-center">
+                    <span>4</span>
+                    <h4>No Hassle</h4>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 
+<div class="incentive-two">
 
+</div>
 
 
 @endsection
