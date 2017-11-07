@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class adventurercontroller extends Controller
+class adventurerController extends Controller
 {
     public function listing()
     {
