@@ -12,10 +12,10 @@
 <br>
 <br>
 
+<div class="row">
     @foreach($activities as $activity)
-
-        <div class="row">
-        <div class="col-sm-4 col-sm-3">
+        
+        <div class="col-lg-4 col-sm-3">
 
             <div class="card" style="width: 20rem;">
                 <img class="card-img-top" src="{{ asset('uploads/' .$activity->picture) }}" alt="Card image cap">
@@ -27,7 +27,6 @@
             </div>
 
         </div>
-        </div>
         <br>
        
     <!-- 
@@ -37,9 +36,9 @@
         </a>
     </li> 
     -->
-
     @endforeach
 
+    </div>
 
     <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
