@@ -130,8 +130,65 @@
 </div>
 
 
-<div class="incentive-two">
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="bdo-why text-center">
+                <h5>Praha</h5> 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10240.79816953683!2d14.449798250000002!3d50.0825508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2scz!4v1510090827106" width="250" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="bdo-why text-center">
+                    <h5>More Info</h5>
+                    <div class="footer-links">
+                        <a href="#">About</a><br>
+                        <a href="#">Blog</a><br>
+                        <a href="#">Sign Your company up</a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+            <div class="bdo-why text-center">
+                <h5>Main Menu</h5>
+                <div class="footer-links">
+                    <a href="#">How It Works</a><br>
+                    <a href="#">FAQ</a><br>
+                    <a href="#">Contact</a><br>
+                    <a href="#">Testimonials</a><br>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-3">
+                <div class="bdo-why text-center">
+                    <h5>Contact us</h5>
+                    <div class="footer-links">
+                        <a href="#">hello@bigdayout.cz</a><br>
+                        <a href="#">+34 933 930 135</a><br>
+                    </div><br>
+                    <div class="social">
+                    <h5>Follow Us:</h5>
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-center">
+                    <p>&copy;BigDayOut 2017</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 
