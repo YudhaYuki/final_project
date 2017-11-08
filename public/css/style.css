@@ -19,7 +19,7 @@
   padding: 40px 30px 40px 30px;
   margin-top: 7%;
   width: 50%;
-  height: 250px;
+  height: 300px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -30,11 +30,12 @@
 }
 
 .bdo-banner h1 {
-  font-size: 1.8em;
+  font-size: 1.3em;
 }
 
 .bdo-banner span {
   color: #6CFF19;
+  font-size: 1.8em;
 }
 
 .steps .bdo-banner h2 {
@@ -56,6 +57,39 @@
 
 .bdo-btn:hover {
   background-color: #730074;
+}
+
+.bdo-btn-reg {
+  background-color: #6CFF19;
+  width: 40%;
+  height: 60px;
+  padding-top: 18px;
+  opacity: 2;
+}
+
+.bdo-btn-reg:hover {
+  background-color: #730074;
+}
+
+.bdo-card-text a {
+  font-family: 'Gloria Hallelujah', cursive;
+  color: #730074;
+}
+
+.bdo-btn-listing {
+  background-color: #6CFF19;
+}
+
+.bdo-btn-listing:hover {
+  background-color: #730074;
+}
+
+.search-activity #btn {
+  border-radius: 10px;
+  border: 1px solid #6CFF19;
+  padding: 10px;
+  background-color: #730074;
+  color: #fff;
 }
 
 .bdo-next {
@@ -106,18 +140,24 @@
   color: #730074;
 }
 
+.listing-heading {
+  font-family: 'Permanent Marker', cursive;
+}
+
+/*************************************************************************************/
+
 @media (max-width: 34em) {
   .form {
     padding: 10px 10px 10px 10px;
     width: 95%;
-    height: 250px;
+    height: 300px;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
   .bdo-banner h1 {
-    font-size: 1.2em;
+    font-size: 1.0em;
   }
 
   #datepicker {

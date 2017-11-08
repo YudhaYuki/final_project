@@ -9,7 +9,7 @@
                     <div class="form">
                         <div class="row ">
                             <div class="col-md-12 text-center bdo-banner">
-                                <h1><span>BigDayOut</span> - Spontaneous Prague Tours</h1>
+                                <h1><span>BigDayOut</span><br>Spontaneous Prague Adventures</h1>
                                 <p></p>
                             </div>
                         </div>
