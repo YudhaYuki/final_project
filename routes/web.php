@@ -58,3 +58,6 @@ Route::get('/activities/new', 'activityController@create')->middleware('auth');
 Route::post('/activities/new', 'activityController@store')->middleware('auth');
 Route::get('/activities/edit/{id}', 'activityController@edit')->middleware('auth');
 Route::post('/activities/edit/{id}', 'activityController@store')->middleware('auth');
+
+
+Route::get('adventurers/new', 'adventurerController@create');
