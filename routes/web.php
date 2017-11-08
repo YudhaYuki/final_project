@@ -61,12 +61,17 @@ Route::post('/activities/edit/{id}', 'activityController@store')->middleware('au
 
 
 
-
-// These Routes handle the  adventurer registration
+// This Routes handle adventurer registration
 
 Route::get('adventurers/new', 'adventurerController@create');
 Route::post('adventurers/new', 'adventurerController@store');
 
 Route::get('adventurers/edit/{id}', 'adventurerController@edit');
 Route::post('adventurers/edit/{id}', 'adventurerController@store');
+
+Route::get('/adventurers/list', 'adventurerController@listing');
+Route::get('/adventurers/adventurer/{id}', 'adventurerController@detail')->name('adventurer detail');
+
+
+
 
