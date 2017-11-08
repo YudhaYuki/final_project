@@ -46,7 +46,7 @@ Route::get('/', 'indexController@homepage');
 Route::get('/faq', 'HomeController@faq');
 Route::get('/howItworks', 'HomeController@how');
 Route::get('/contact', 'HomeController@cont');
-Route::get('/register', 'HomeController@form')->name('register');
+// Route::get('/register', 'HomeController@form')->name('register');
 Route::get('/home', 'HomeController@index')->name('home');
 
 
