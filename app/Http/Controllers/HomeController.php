@@ -42,8 +42,8 @@ class HomeController extends Controller
         return view('contact');
     }
 
-    public function form()
-    {
-        return view('register');
-    }
+    // public function form()
+    // {
+    //     return view('register');
+    // }
 }
