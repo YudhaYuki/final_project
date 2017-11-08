@@ -37,11 +37,14 @@
         <input class="form-control" type="text" name="price" value="{{ $activity->price }}" id="price">
     </div>
 
-
     <div class="form-group">
-        <label for="activity_category_id">Activity category ID:</label><br>
-        <input class="form-control" type="text" name="activity_category_id" value="{{ $activity->activity_category_id }}" id="activity_category_id">
-    </div>
+    <label for="activity_category_id_select">Activity Category ID:</label><br>
+    <select class="form-control" name="activity_category_id" id="activity_category_id_select">
+        @foreach($activityCategories as $activityCategory)
+            <option value="{{ $activityCategory->id }}"{{ $activityCategory->id == $activity->activity_category_id ? ' selected' : '' }}>{{ $activityCategory->name }}</option>
+        @endforeach
+    </select>
+</div>
 
     <div class="form-group">
         <input class="btn btn-primary" type="submit" value="save">

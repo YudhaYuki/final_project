@@ -30,7 +30,7 @@
 
     <div class="form-group">
         <label for="surname">Surname:</label><br>
-        <input class="form-control" type="text" name="surname" value="{{ $adventurer->surname }}" id="email">
+        <input class="form-control" type="text" name="surname" value="{{ $adventurer->surname }}" id="surname">
     </div>
 
     <div class="form-group">
@@ -61,7 +61,7 @@
         <input class="form-control" type="text" name="mobile_number" value="{{ $adventurer->mobile_number }}" id="mobile_number">
     </div>
 
-     {{-- <div class="form-group">
+     <div class="form-group">
         <label for="is_admin">Is admin:</label><br>
         <input class="form-control" type="is_admin" name="is_admin" id="is_admin">
     </div>
@@ -69,7 +69,7 @@
     <div class="form-group">
         <label for="permission_level">Permission level:</label><br>
         <input class="form-control" type="permission_level" name="permission_level" id="permission_level">
-    </div> --}}
+    </div>
 
 
     <div class="form-group">

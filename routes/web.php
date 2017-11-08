@@ -60,7 +60,6 @@ Route::get('/activities/edit/{id}', 'activityController@edit')->middleware('auth
 Route::post('/activities/edit/{id}', 'activityController@store')->middleware('auth');
 
 
-
 // This Routes handle adventurer registration
 
 Route::get('adventurers/new', 'adventurerController@create');
@@ -73,5 +72,14 @@ Route::get('/adventurers/list', 'adventurerController@listing');
 Route::get('/adventurers/adventurer/{id}', 'adventurerController@detail')->name('adventurer detail');
 
 
+// This Routes handle activity category
 
+Route::get('activity_categories/new', 'activity_categoryController@create');
+Route::post('activity_categories/new', 'activity_categoryController@store');
+
+Route::get('activity_categories/edit/{id}', 'activity_categoryController@edit');
+Route::post('activity_categories/edit/{id}', 'activity_categoryController@store');
+
+Route::get('/activity_categories/list', 'activity_categoryController@listing');
+Route::get('/activity_categories/activity_category/{id}', 'activity_categoryController@detail')->name('activityCategory detail');
 

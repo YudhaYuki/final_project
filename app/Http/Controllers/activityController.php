@@ -46,6 +46,8 @@ class activityController extends Controller
         {
             $view = view('activities/edit');
             $view->activity = new Activity();
+
+            $view->activityCategories = \App\Activity_Category::all(); // added category
     
             return $view;
         }
@@ -56,6 +58,8 @@ class activityController extends Controller
     
             $view = view('activities/edit');
             $view->activity = $activity;
+
+            $view->activityCategories = \App\Activity_Category::all(); // added category
             
             return $view;
         }
