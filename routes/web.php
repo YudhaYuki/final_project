@@ -46,7 +46,7 @@ Route::get('/', 'indexController@homepage');
 Route::get('/faq', 'HomeController@faq');
 Route::get('/howItworks', 'HomeController@how');
 Route::get('/contact', 'HomeController@cont');
-Route::get('/register', 'HomeController@form')->name('register');
+// Route::get('/register', 'HomeController@form')->name('register');
 Route::get('/home', 'HomeController@index')->name('home');
 
 
@@ -60,4 +60,13 @@ Route::get('/activities/edit/{id}', 'activityController@edit')->middleware('auth
 Route::post('/activities/edit/{id}', 'activityController@store')->middleware('auth');
 
 
+
+
+// This Routes handle adventurer registration
+
 Route::get('adventurers/new', 'adventurerController@create');
+Route::post('adventurers/new', 'adventurerController@store');
+
+Route::get('adventurers/edit/{id}', 'adventurerController@edit');
+Route::post('adventurers/edit/{id}', 'adventurerController@store');
+
