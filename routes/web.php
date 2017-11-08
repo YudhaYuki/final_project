@@ -46,11 +46,11 @@ Route::get('/', 'indexController@homepage');
 Route::get('/faq', 'HomeController@faq');
 Route::get('/howItworks', 'HomeController@how');
 Route::get('/contact', 'HomeController@cont');
-// Route::get('/register', 'HomeController@form')->name('register');
+Route::get('/register', 'HomeController@form')->name('register');
 Route::get('/home', 'HomeController@index')->name('home');
 
 
-Route::get('/activities/list', 'activityController@listing');
+Route::get('/activities/listing', 'activityController@listing');
 
 Route::get('/activities/activity/{id}', 'activityController@detail')->name('activity detail');
 
@@ -62,7 +62,7 @@ Route::post('/activities/edit/{id}', 'activityController@store')->middleware('au
 
 
 
-// This Routes handle adventurer registration
+// These Routes handle the  adventurer registration
 
 Route::get('adventurers/new', 'adventurerController@create');
 Route::post('adventurers/new', 'adventurerController@store');
