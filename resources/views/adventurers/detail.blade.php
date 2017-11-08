@@ -9,32 +9,32 @@
 <br>
 <br>
 
-<!-- Picture :<br> -->
-<p class="picture">
-<img src="{{ asset('uploads/' .$activity->picture) }}">
+
+<h1>{{ $adventurer->name }} {{ $adventurer->surname }}</h1>
+
+Email :
+<p class="email">
+{{ $adventurer->email }}
 </p>
 
-<h1>{{ $adventurer->name }}</h1>
-
-<!-- Description :<br> -->
-<p class="description">
-{{ $adventurer->description }}
+Gender : <br>
+<p class="gender">
+{{ $adventurer->gender_id }}
 </p>
 
-Provider : <br>
-<p class="provider">
-{{ $adventurer->company_provider }}
-</p>
-
-Price : <br>
-<div class="price">{{ $adventurer->price }}</div>
+Date of birth : <br>
+<div class="date_of_birth">{{ $adventurer->date_of_birth }}</div>
 <br>
 
-Activity Category ID :<br>
-<div class="activity_category_id">{{ $activity->activity_category_id }}</div>
+Nationality :<br>
+<div class="nationality_id">{{ $adventurer->nationality_id }}</div>
+
+
+Mobile number :<br>
+<div class="mobile_number">{{ $adventurer->mobile_number }}</div>
 
 
 </div>
 @endsection
 
-@section('page_title') {{ $activity->name }} ({{ $activity->price }}) @endsection
+@section('page_title') {{ $adventurer->name }} ({{ $adventurer->surname }}) @endsection
