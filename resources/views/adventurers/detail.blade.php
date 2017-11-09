@@ -19,7 +19,7 @@ Email :
 
 Gender : <br>
 <p class="gender">
-{{ $adventurer->gender_id }}
+{{ $genders[$adventurer->gender_id] }}
 </p>
 
 Date of birth : <br>
@@ -27,7 +27,7 @@ Date of birth : <br>
 <br>
 
 Nationality :<br>
-<div class="nationality_id">{{ $adventurer->nationality_id }}</div>
+<div class="nationality_id">{{ $nationalities[$adventurer->nationality_id] }}</div>
 
 
 Mobile number :<br>

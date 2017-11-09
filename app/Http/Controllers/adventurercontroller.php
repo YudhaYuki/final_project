@@ -303,7 +303,9 @@ class adventurerController extends Controller
 
         // put that movie into the view as variable $movie
         $view->adventurer = $adventurer;
-
+        $view->genders = $this->genders;
+        $view->nationalities = $this->nationalities;
+        
         return $view;
     }
 
