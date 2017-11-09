@@ -4,6 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Http\Requests;
+use App\Post;
+use Mail;
+use Session;
+
 class HomeController extends Controller
 {
     /**
@@ -37,9 +42,35 @@ class HomeController extends Controller
         return view('howItworks');
     }
 
-    public function cont()
+    public function getContact()
     {
-        return view('contact');
+        return view('contacts/contact');
+    }
+
+    public function postContact(Request $request)
+    {
+        $this->validate($request, [
+            'email' => 'required|email',
+            'full_name' => 'min:3',
+            'subject' => 'min:5',
+            'message' => 'min:10']);
+        
+        $data = array(
+            'email' => $request->email,
+            'full_name' => $request->full_name,
+            'subject' => $request->subject,
+            'bodyMessage' => $request->message
+        );
+        
+        Mail::send('emails.contact', $data, function($message) use ($data) {
+            $message->from($data['email']);
+            $message->to('bdous2017@gmail.com');
+            $message->subject($data['subject']);
+        });
+
+        Session::flash('success', 'Your message was sent!');
+
+        // return redirect()->url('/');
     }
 
     public function form()

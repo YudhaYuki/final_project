@@ -25,7 +25,7 @@
 
     <div class="form-group">
         <label for="name">Name:</label><br>
-        <input class="form-control" type="name" name="name" value="{{ $adventurer->name }}" id="name">
+        <input class="form-control" type="text" name="name" value="{{ $adventurer->name }}" id="name">
     </div>
 
     <div class="form-group">

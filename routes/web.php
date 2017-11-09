@@ -45,7 +45,10 @@ Auth::routes();
 Route::get('/', 'indexController@homepage');
 Route::get('/faq', 'HomeController@faq');
 Route::get('/howItworks', 'HomeController@how');
-Route::get('/contact', 'HomeController@cont');
+Route::get('/contact', 'HomeController@getContact');
+// added by yudha post for contact
+Route::post('/contact', 'HomeController@postContact');
+
 Route::get('/register', 'HomeController@form')->name('register');
 Route::get('/home', 'HomeController@index')->name('home');
 

@@ -34,7 +34,7 @@
                 <a class="nav-link" href="{{ action('HomeController@faq') }}">FAQ</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="{{ action('HomeController@cont') }}">Contact</a>
+                <a class="nav-link" href="{{ action('HomeController@getContact') }}">Contact</a>
                 </li>
             </ul>
 
