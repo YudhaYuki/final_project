@@ -26,7 +26,14 @@
             
             <div class="col-lg-4 col-sm-3 mb-5 text-center">
                 <div class="card" style="width: 20rem;">
-                    <img class="card-img-top img-fluid" src="{{ asset('uploads/' .$activity->picture) }}" alt="Card image cap">
+                    <div class="wrap">
+                        <img class="card-img-top img-fluid" src="{{ asset('uploads/' .$activity->picture) }}" alt="Card image cap">
+                        <div class="image-overlay click_overlay">
+                            <div id="remove_activity">
+                                <p>REMOVE ACTIVITY</p>    
+                            </div>
+                        </div>
+                    </div>
                     <div class="card-body">
                         <h4 class="card-title bdo-card-text"><a href="{{ route('activity detail', ['id' => $activity->id]) }}">{{ $activity->name }} </a></h4>
                         <!-- <p class="card-text"><a href="{{ route('activity detail', ['id' => $activity->id]) }}">{{ $activity->description }} </a></p> -->
@@ -34,6 +41,8 @@
                     </div>
                 </div>
             </div>
+
+        
             
         
         <!-- 
