@@ -29,6 +29,7 @@ class activityController extends Controller
         {
             $view = view('activities/detail'); // resources/views/  movies/detail  .blade.php
     
+            
             // find one movie by it's primary key (`id` column)
             $activity = Activity::find($id);
             // $movie = Movie::where('id', 1)->first(); // equivalent to the above
@@ -36,6 +37,10 @@ class activityController extends Controller
             // put that movie into the view as variable $movie
             $view->activity = $activity;
     
+
+            // return $activity->category()->first();
+            // return $activity->category;
+            
             return $view;
         }
     
@@ -56,6 +61,7 @@ class activityController extends Controller
         {
             $activity = Activity::findOrFail($id);
     
+            
             $view = view('activities/edit');
             $view->activity = $activity;
 

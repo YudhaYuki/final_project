@@ -22,4 +22,8 @@ class Activity extends Model
             
             return asset('uploads/' . $this->picture);
         }
+
+        public function category(){
+            return $this->belongsTo(Activity_Category::class, 'activity_category_id');
+        }
 }

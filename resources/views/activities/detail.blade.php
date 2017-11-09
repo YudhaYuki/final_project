@@ -18,7 +18,7 @@
                 <p><strong>Price</strong></p>
                     {{ $activity->price }}
                 <p><strong>Activity Category ID</strong></p>
-                    {{ $activity->activity_category_id }}
+                    {{ $activity->category->name }}
             </p><br>
         </div>
     </div>
