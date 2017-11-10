@@ -62,7 +62,7 @@
     <div class="row">
         <div class="col-md-12 mb-5">
             <div class="goToRegister text-center mt-5 mb-5">
-                <a href="{{ action('HomeController@getContact') }}" class="btn btn-primary bdo-btn-reg">Next</a>
+                <a href="{{ route('register') }}" class="btn btn-primary bdo-btn-reg">Next</a>
             </div>
         </div>
     </div>

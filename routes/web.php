@@ -67,6 +67,9 @@ Route::post('/activities/edit/{id}', 'activityController@store')->middleware('au
 Route::get('users/new', 'userController@create');
 Route::post('users/new', 'userController@store');
 
+Route::get('users/registration', 'RegistrationController@create');
+// Route::post('users/new', 'userController@store');
+
 Route::get('users/edit/{id}', 'userController@edit');
 Route::post('users/edit/{id}', 'userController@store');
 
