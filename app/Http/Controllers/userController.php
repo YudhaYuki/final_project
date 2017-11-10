@@ -4,16 +4,22 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Adventurer;
+use App\User;
 
-class adventurerController extends Controller
+class userController extends Controller
 {
-    protected $genders = [
+    public static $genders = [
         1 => 'Female',
         2 => 'Male'
     ];
 
-    protected $nationalities = [
+    public static $permission_levels = [
+        1 => 'Managers',
+        2 => 'Employees',
+        3 => 'Travellers'
+    ];
+
+    public static $nationalities = [
         1 => 'Afghan',
         2 => 'Albanian',
         3 => 'Algerian',
@@ -210,26 +216,28 @@ class adventurerController extends Controller
     ];
 
         /**
-     * create a new adventurer
+     * create a new user
      */
      public function create()
      {
-         $view = view('adventurers/edit');
-         $view->adventurer = new Adventurer();
-         $view->genders = $this->genders;
-         $view->nationalities = $this->nationalities;
+         $view = view('users/edit');
+         $view->user = new User();
+         $view->genders = userController::$genders;
+         $view->permission_levels = userController::$permission_levels;
+         $view->nationalities = userController::$nationalities;
  
          return $view;
      }
  
      public function edit($id)
      {
-         $adventurer = Adventurer::findOrFail($id);
+         $user = user::findOrFail($id);
  
-         $view = view('adventurers/edit');
-         $view->adventurer = $adventurer;
-         $view->genders = $this->genders;
-         $view->nationalities = $this->nationalities;
+         $view = view('users/edit');
+         $view->user = $user;
+         $view->genders = userController::$genders;
+         $view->permission_levels = userController::$permission_levels;
+         $view->nationalities = userController::$nationalities;
          
          return $view;
      }
@@ -240,52 +248,44 @@ class adventurerController extends Controller
          if($id) // if this is edit
          {
              // select movie from DB
-             $adventurer = Adventurer::findOrFail($id);
+             $user = User::findOrFail($id);
          }
          else
          {
              // create empty object Movie
-             $adventurer = new Adventurer();
+             $user = new User();
          }
  
          // fill it with selected data from the request
-         $adventurer->fill(request()->only([
+         $user->fill(request()->only([
              'email',
              'password',
-             'repeat_password',
              'gender_id',
              'name',
              'surname',
              'date_of_birth',
              'nationality_id',
              'mobile_number',
-             'is_admin',
              'permission_level'
          ]));
          
          // save the movie
-         $adventurer->save();
+         $user->save();
  
          // inform the user of success
          session()->flash('success_message', 'Your data have been recorded!');
  
          // redirect
-         return redirect()->action('adventurerController@edit', ['id' => $adventurer->id]);
+         return redirect()->action('userController@edit', ['id' => $user->id]);
      }
-
-
-
-
-
-
 
 
     public function listing()
     {
-        $view = view('adventurers/listing'); // resources/views/  movies/listing  .blade.php
+        $view = view('users/listing'); // resources/views/  movies/listing  .blade.php
 
-        $all_adventurers = Adventurer::orderBy('name', 'asc')->get();
-        $view->adventurers = $all_adventurers;
+        $all_users = User::orderBy('name', 'asc')->get();
+        $view->users = $all_users;
         
         return $view;
     }
@@ -295,16 +295,17 @@ class adventurerController extends Controller
      */
     public function detail($id)
     {
-        $view = view('adventurers/detail'); // resources/views/  movies/detail  .blade.php
+        $view = view('users/detail'); // resources/views/  movies/detail  .blade.php
 
         // find one movie by it's primary key (`id` column)
-        $adventurer = Adventurer::find($id);
+        $user = User::find($id);
         // $movie = Movie::where('id', 1)->first(); // equivalent to the above
 
         // put that movie into the view as variable $movie
-        $view->adventurer = $adventurer;
-        $view->genders = $this->genders;
-        $view->nationalities = $this->nationalities;
+        $view->user = $user;
+        $view->genders = userController::$genders;
+        $view->nationalities = userController::$nationalities;
+        $view->permission_levels = userController::$permission_levels;
         
         return $view;
     }
@@ -342,12 +343,12 @@ class adventurerController extends Controller
         ]);
         
         // create new object of class Movie
-        $adventurer = new Adventurer();
+        $user = new User();
 
         // add some data from request into this object
-        $adventurer->fill($request->all());
+        $user->fill($request->all());
 
-        $adventurer->fill($request->only([
+        $user->fill($request->only([
             'email',
             'password',
             'repeat_password',
@@ -361,7 +362,7 @@ class adventurerController extends Controller
             'permission_level'
         ]));
 
-        dd($adventurer);
+        dd($user);
         // $movie->save();
 
         // redirect somewhere

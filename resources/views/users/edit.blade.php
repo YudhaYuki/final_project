@@ -10,55 +10,55 @@
 
     <div class="form-group">
         <label for="email">Email Address:</label><br>
-        <input class="form-control" type="email" name="email" value="{{ $adventurer->email }}" id="email">
+        <input class="form-control" type="email" name="email" value="{{ $user->email }}" id="email">
     </div>
 
     <div class="form-group">
         <label for="password">Password:</label><br>
-        <input class="form-control" type="password" name="password" value="{{ $adventurer->password }}" id="password">
+        <input class="form-control" type="password" name="password" value="{{ $user->password }}" id="password">
     </div>
 
     <div class="form-group">
         <label for="repeat_password">Repeat password:</label><br>
-        <input class="form-control" type="password" name="repeat_password" value="{{ $adventurer->repeat_password }}" id="repeat_password">
+        <input class="form-control" type="password" name="repeat_password" value="{{ $user->repeat_password }}" id="repeat_password">
     </div>
 
     <div class="form-group">
         <label for="name">Name:</label><br>
-        <input class="form-control" type="text" name="name" value="{{ $adventurer->name }}" id="name">
+        <input class="form-control" type="text" name="name" value="{{ $user->name }}" id="name">
     </div>
 
     <div class="form-group">
         <label for="surname">Surname:</label><br>
-        <input class="form-control" type="text" name="surname" value="{{ $adventurer->surname }}" id="surname">
+        <input class="form-control" type="text" name="surname" value="{{ $user->surname }}" id="surname">
     </div>
 
     <div class="form-group">
         <label for="gender_id_select">Gender:</label><br>
         <select class="form-control" name="gender_id" id="gender_id_select">
             @foreach($genders as $gender_id => $gender_name)
-                <option value="{{ $gender_id }}"{{ $gender_id == $adventurer->gender_id ? ' selected' : '' }}>{{ $gender_name }}</option>
+                <option value="{{ $gender_id }}"{{ $gender_id == $user->gender_id ? ' selected' : '' }}>{{ $gender_name }}</option>
             @endforeach
         </select>
     </div>
 
     <div class="form-group">
         <label for="date_of_birth">Date of birth:</label><br>
-        <input class="form-control" type="date" name="date_of_birth" value="{{ $adventurer->date_of_birth }}" id="date_of_birth">
+        <input class="form-control" type="date" name="date_of_birth" value="{{ $user->date_of_birth }}" id="date_of_birth">
     </div>
 
     <div class="form-group">
         <label for="nationality_id_select">Nationality:</label><br>
         <select class="form-control" name="nationality_id" id="nationality_id_select">
             @foreach($nationalities as $nationality_id => $nationality_name)
-                <option value="{{ $nationality_id }}"{{ $nationality_id == $adventurer->nationality_id ? ' selected' : '' }}>{{ $nationality_name }}</option>
+                <option value="{{ $nationality_id }}"{{ $nationality_id == $user->nationality_id ? ' selected' : '' }}>{{ $nationality_name }}</option>
             @endforeach
         </select>
     </div>
 
     <div class="form-group">
         <label for="mobile_number">Mobile number:</label><br>
-        <input class="form-control" type="text" name="mobile_number" value="{{ $adventurer->mobile_number }}" id="mobile_number">
+        <input class="form-control" type="text" name="mobile_number" value="{{ $user->mobile_number }}" id="mobile_number">
     </div>
 
      <div class="form-group">
@@ -67,9 +67,13 @@
     </div>
 
     <div class="form-group">
-        <label for="permission_level">Permission level:</label><br>
-        <input class="form-control" type="permission_level" name="permission_level" id="permission_level">
-    </div>
+    <label for="gender_id_select">Permission level:</label><br>
+    <select class="form-control" name="permission_level_id" id="permission_level_id_select">
+        @foreach($permission_levels as $permission_level_id => $permission_level_name)
+            <option value="{{ $permission_level_id }}"{{ $permission_level_id == $user->permission_level_id ? ' selected' : '' }}>{{ $permission_level_name }}</option>
+        @endforeach
+    </select>
+</div>
 
 
     <div class="form-group">

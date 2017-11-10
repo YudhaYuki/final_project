@@ -49,7 +49,6 @@ Route::get('/contact', 'HomeController@getContact');
 // added by yudha post for contact
 Route::post('/contact', 'HomeController@postContact');
 
-Route::get('/register', 'HomeController@form')->name('register');
 Route::get('/home', 'HomeController@index')->name('home');
 
 
@@ -63,16 +62,16 @@ Route::get('/activities/edit/{id}', 'activityController@edit')->middleware('auth
 Route::post('/activities/edit/{id}', 'activityController@store')->middleware('auth');
 
 
-// This Routes handle adventurer registration
+// This Routes handle user registration
 
-Route::get('adventurers/new', 'adventurerController@create');
-Route::post('adventurers/new', 'adventurerController@store');
+Route::get('users/new', 'userController@create');
+Route::post('users/new', 'userController@store');
 
-Route::get('adventurers/edit/{id}', 'adventurerController@edit');
-Route::post('adventurers/edit/{id}', 'adventurerController@store');
+Route::get('users/edit/{id}', 'userController@edit');
+Route::post('users/edit/{id}', 'userController@store');
 
-Route::get('/adventurers/list', 'adventurerController@listing');
-Route::get('/adventurers/adventurer/{id}', 'adventurerController@detail')->name('adventurer detail');
+Route::get('/users/list', 'userController@listing');
+Route::get('/users/user/{id}', 'userController@detail')->name('user detail');
 
 
 // This Routes handle activity category

@@ -36,6 +36,14 @@
                 <li class="nav-item">
                 <a class="nav-link" href="{{ action('HomeController@getContact') }}">Contact</a>
                 </li>
+                
+                @if(Auth::check() && Auth::user()->isTraveler())
+                    <li class="nav-item">
+                        Travel!!!
+                    </li>    
+                @endif
+
+
             </ul>
 
 
@@ -62,6 +70,8 @@
                             @endauth
                         </div>
                     @endif
+
+                    
 
                     @if(session()->has('success_message'))
                         <div class="alert alert-success">

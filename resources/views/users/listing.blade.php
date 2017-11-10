@@ -4,19 +4,19 @@
 
 <div class="container">
 
-    <h1>List of adventurers </h1>
+    <h1>List of Users </h1>
 
     <input type="text" id="search"/>
-<button id="btn"> Search adventurers </button>
+<button id="btn"> Search users </button>
 
 <br>
 <br>
 
 <ul>
-@foreach($adventurers as $adventurer)
+@foreach($users as $user)
     <li>
-        <a href="{{ route('adventurer detail', ['id' => $adventurer->id]) }}">
-            {{ $adventurer->name }} {{ $adventurer->surname }} ({{ $adventurer->email }})
+        <a href="{{ route('user detail', ['id' => $user->id]) }}">
+            {{ $user->name }} {{ $user->surname }} ({{ $user->email }})
         </a>
     </li>
 @endforeach
@@ -63,4 +63,4 @@ $('#btn').click(function() {
 
 </div>
 
-@section('page_title') List of adventurers @endsection
+@section('page_title') List of users @endsection

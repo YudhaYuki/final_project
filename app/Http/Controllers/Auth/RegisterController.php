@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\User;
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\userController;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
@@ -22,12 +23,28 @@ class RegisterController extends Controller
 
     use RegistersUsers;
 
+     /**
+     * Show the application registration form.
+     *
+     * @return \Illuminate\Http\Response
+     */
+     public function showRegistrationForm()
+     {         
+        $view = view('auth.register');
+        $view->user = new User();
+        $view->genders = userController::$genders;
+        $view->permission_levels = userController::$permission_levels;
+        $view->nationalities = userController::$nationalities;
+
+        return $view;
+     }
+
     /**
      * Where to redirect users after registration.
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.
@@ -66,6 +83,12 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
+            'gender_id' => $data['gender_id'],
+            'surname' => $data['surname'],
+            'date_of_birth' => $data['date_of_birth'],
+            'nationality_id' => $data['nationality_id'],
+            'mobile_number' => $data['mobile_number'],
+            'permission_level' => $data['email']
         ]);
     }
 }
