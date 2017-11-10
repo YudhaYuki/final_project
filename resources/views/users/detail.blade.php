@@ -34,14 +34,6 @@ Mobile number :<br>
 <div class="mobile_number">{{ $user->mobile_number }}</div>
 
 
-Is admin :<br>
-<div class="is_admin">{{ $is_admins[$user->is_admin] }}</div>
-
-
-Permission level :<br>
-<div class="permission_level">{{ $permission_levels[$user->permission_level] }}</div>
-
-
 </div>
 @endsection
 
