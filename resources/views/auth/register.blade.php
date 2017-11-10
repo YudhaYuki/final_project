@@ -107,15 +107,6 @@
                         <input class="form-control" type="text" name="mobile_number" value="{{ $user->mobile_number }}" id="mobile_number">
                     </div>
 
-                    <div class="form-group">
-                        <label for="gender_id_select">Permission level:</label><br>
-                        <select class="form-control" name="permission_level_id" id="permission_level_id_select">
-                            @foreach($permission_levels as $permission_level_id => $permission_level_name)
-                                <option value="{{ $permission_level_id }}"{{ $permission_level_id == $user->permission_level_id ? ' selected' : '' }}>{{ $permission_level_name }}</option>
-                            @endforeach
-                        </select>
-                    </div>
-
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">

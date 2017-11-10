@@ -37,6 +37,19 @@
                 <a class="nav-link" href="{{ action('HomeController@getContact') }}">Contact</a>
                 </li>
                 
+                @if(Auth::check() && Auth::user()->isManagers())
+                    <li class="nav-item">
+                        Manager!!!
+                    </li>    
+                @endif
+
+
+                @if(Auth::check() && Auth::user()->isEmployees())
+                    <li class="nav-item">
+                        Employees!!!
+                    </li>    
+                @endif
+
                 @if(Auth::check() && Auth::user()->isTraveler())
                     <li class="nav-item">
                         Travel!!!

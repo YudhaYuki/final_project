@@ -88,7 +88,7 @@ class RegisterController extends Controller
             'date_of_birth' => $data['date_of_birth'],
             'nationality_id' => $data['nationality_id'],
             'mobile_number' => $data['mobile_number'],
-            'permission_level' => $data['email']
+            'permission_level_id' => 3
         ]);
     }
 }
