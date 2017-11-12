@@ -5,33 +5,37 @@
 <br>
 <div class="container">
 
-<a href="{{ action('userController@edit', ['id' => $user->id]) }}" class="btn btn-primary">Edit user</a>
+<a href="{{ action('userController@edit', ['id' => $user->id]) }}" class="btn btn-primary">Edit user profile</a>
 <br>
 <br>
 
 
 <h1>{{ $user->name }} {{ $user->surname }}</h1>
 
-Email :
+<strong>Email :</strong>
 <p class="email">
 {{ $user->email }}
 </p>
 
-Gender : <br>
+<strong>Gender :</strong> 
 <p class="gender">
 {{ $genders[$user->gender_id] }}
 </p>
 
-Date of birth : <br>
-<div class="date_of_birth">{{ $user->date_of_birth }}</div>
-<br>
+<strong>Date of birth :</strong>
+<p class="date_of_birth">
+{{ $user->date_of_birth }}
+</p>
 
-Nationality :<br>
-<div class="nationality_id">{{ $nationalities[$user->nationality_id] }}</div>
+<strong> Nationality : </strong>
+<p class="nationality_id">
+{{ $nationalities[$user->nationality_id] }}
+</p>
 
-
-Mobile number :<br>
-<div class="mobile_number">{{ $user->mobile_number }}</div>
+<strong>Mobile number :</strong>
+<p class="mobile_number">
+{{ $user->mobile_number }}
+</p>
 
 
 </div>
