@@ -15,10 +15,19 @@ class CreateReviewsTable extends Migration
     {
         Schema::create('reviews', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('activity_id')->unsigned()->nullable();
-            $table->integer('user_id')->unsigned()->nullable();
-            $table->string('review_text')->nullable();
+
+            $table->string('name');
+            $table->string('email');
+            $table->text('comment');
+            $table->boolean('approved');
+            $table->integer('activity_id')->unsigned();
+            $table->integer('user_id')->unsigned();
+            
             $table->timestamps();
+        });
+
+        Schema::table('reviews', function ($table) {
+            $table->foreign('activity_id')->references('id')->on('activities')->onDelete('cascade');
         });
     }
 
@@ -29,6 +38,7 @@ class CreateReviewsTable extends Migration
      */
     public function down()
     {
+        Schema::dropForeign(['activity_id']);
         Schema::dropIfExists('reviews');
     }
 }
