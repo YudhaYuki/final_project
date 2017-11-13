@@ -47,6 +47,10 @@ class User extends Authenticatable
         return $this->permission_level == 3;
     }
 
+    public function reviews()
+    {
+        return $this->morphMany('App\Review');
+    }
 
 
 }

@@ -98,3 +98,7 @@ Route::post('paypal', array('as' => 'paypal','uses' => 'PaypalController@postPay
 // route for check status response
 Route::get('paypal', array('as' => 'status','uses' => 'PaypalController@getPaymentStatus',));
 
+
+
+// route for comments
+Route::post('comments/{activity_id}', ['uses' => 'commentsController@store', 'as' =>'comments.store']);

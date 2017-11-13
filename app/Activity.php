@@ -26,4 +26,14 @@ class Activity extends Model
         public function category(){
             return $this->belongsTo(Activity_Category::class, 'activity_category_id');
         }
+
+        public function reviews()
+        {
+            return $this->morphMany('App\Review');
+        }
+
+        public function comments()
+        {
+            return $this->hasMany('App\Comment');
+        }
 }
