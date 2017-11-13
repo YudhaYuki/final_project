@@ -43,6 +43,16 @@ class activityController extends Controller
             
             return $view;
         }
+
+    //    public function dash()
+    //     {
+    //         $view = view('home'); // resources/views/  movies/listing  .blade.php
+    
+    //         $all_activities = Activity::orderBy('name', 'asc')->get();
+    //         $view->activities = $all_activities;
+            
+    //         return $view;
+    //     }
     
         /**
          * create a new movie
