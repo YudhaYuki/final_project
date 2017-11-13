@@ -34,18 +34,28 @@
 </div>
 @endif
 
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        @foreach($activity->comments as $comment)
+            <div class="comment">
+                <p><strong>Name: </strong> {{ $comment->full_name }} </p>
+                <p><strong>Comment:</strong><br/> {{ $comment->comment }} </p> <br><br>
+            </div>
+        @endforeach
+    </div>
+</div>
 
 
 <div class="container">
     <div class="row">
-        <div class="col-md-12 mt-2 mb-5 text-center">
+        <div class="col-md-8 col-md-offset-2">
             <div id="review-form">
-                {{ Form::open(['route' => ['reviews.store', $activity->id], 'method' => 'POST']) }}
+                {{ Form::open(['route' => ['comments.store', $activity->id], 'method' => 'POST']) }}
                     
                     <div class="row">
                         <div class="col-md-6">
-                            {{ Form::label('name', "Name:") }}
-                            {{ Form::text('name', null, ['class' => 'form-controller']) }}
+                            {{ Form::label('full_name', "Full Name:") }}
+                            {{ Form::text('full_name', null, ['class' => 'form-controller']) }}
                         </div>
 
                         <div class="col-md-6">
@@ -67,8 +77,6 @@
         </div>
     </div>
 </div> 
-
-
 
 
 

@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Comment;
+use App\Activity;
+use Session;
 
 class commentsController extends Controller
 {
@@ -32,9 +35,30 @@ class commentsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, $activity_id)
     {
         //
+        $this->validate($request, array(
+            'full_name' => 'required|max:255',
+            'email' => 'required|email|max:255',
+            'comment' => 'required|min:5|max:2000'
+        ));
+
+        $activity = Activity::find($activity_id);
+
+        $comment = new Comment();
+        $comment->full_name = $request->full_name;
+        $comment->email = $request->email;
+        $comment->comment = $request->comment;
+        $comment->approved = true;
+        $comment->activity()->associate($activity);
+
+        $comment->save();
+
+        Session::flash('success', 'Comment was added');
+
+        // return redirect()->route(['activityController@listing'], ['id' => $activity->id]);
+    
     }
 
     /**
