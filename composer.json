@@ -16,9 +16,7 @@
         "filp/whoops": "~2.0",
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
-        "phpunit/phpunit": "~6.0",
-        "guzzlehttp/guzzle": "~5.2",
-        "paypal/rest-api-sdk-php": "*"
+        "phpunit/phpunit": "~6.0"
     },
     "autoload": {
         "classmap": [

@@ -30,8 +30,10 @@
                         <img class="card-img-top img-fluid" src="{{ asset('uploads/' .$activity->picture) }}" alt="Card image cap">
                         <div class="image-overlay click_overlay">
                             <div id="remove_activity">
-                                <p>REMOVE ACTIVITY</p>    
+                                <p>REMOVE ACTIVITY</p>
+                                <p class="removed">ACTIVITY REMOVED</p>  
                             </div>
+                            
                         </div>
                     </div>
                     <div class="card-body">
