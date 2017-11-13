@@ -100,6 +100,5 @@ Route::get('paypal', array('as' => 'status','uses' => 'PaypalController@getPayme
 
 
 
-// route for reviews
-
-Route::resource('reviews', 'reviewsController');
+// route for comments
+Route::post('comments/{activity_id}', ['uses' => 'commentsController@store', 'as' =>'comments.store']);

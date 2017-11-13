@@ -31,4 +31,9 @@ class Activity extends Model
         {
             return $this->morphMany('App\Review');
         }
+
+        public function comments()
+        {
+            return $this->hasMany('App\Comment');
+        }
 }
