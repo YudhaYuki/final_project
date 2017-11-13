@@ -24,6 +24,7 @@
     </div>
 </div>
 
+@if(Auth::check() && (Auth::user()->isManagers() ||  Auth::user()->isEmployees()))
 <div class="container">
     <div class="row">
         <div class="col-md-12 mt-2 mb-5 text-center">
@@ -31,6 +32,85 @@
         </div>
     </div>
 </div>
+@endif
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 mt-2 mb-5 text-center">
+            <div id="review-form">
+                {{ Form::open(['route' => ['reviews.store', $activity->id], 'method' => 'POST']) }}
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            {{ Form::label('name', "Name:") }}
+                            {{ Form::text('name', null, ['class' => 'form-controller']) }}
+                        </div>
+
+                        <div class="col-md-6">
+                            {{ Form::label('email', "Email:") }}
+                            {{ Form::text('email', null, ['class' => 'form-controller']) }}
+                        </div>
+
+                        <div class="col-md-12">
+                            {{ Form::label('comment', "Comment:") }}
+                            {{ Form::textarea('comment', null, ['class' => 'form-controller']) }}
+
+                            {{ Form::submit('Add Review', ['class' => 'btn btn-success btn-block', 'style' => 'margin-top:15px;']) }}
+                        </div>
+
+                    </div>
+
+                {{ Form::close() }}
+            </div>
+        </div>
+    </div>
+</div> 
+
+
+
+
+
+{{-- 
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-md-12 mt-5 mb-5">
+            <div class="form-register">
+                <h3>Add Review:</h3><br>
+                <form action="{{ route('reviews.store') }}" enctype="multipart/form-data" method="post">
+
+                    {{ csrf_field() }}
+
+                    <input type="hidden" name="activity_category_id" value="Activity">
+                    <input type="hidden" name="activity_id" value="{{ $activity->id }}">
+
+
+                    <div class="form-group">
+                        <label for="name">Name:</label><br>
+                        <input class="form-control" type="text" name="name" value="" id="name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label><br>
+                        <input class="form-control" type="email" name="email" value="" id="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comment">Comment:</label><br>
+                        <textarea class="form-control" name="comment" value="" id="comment"> </textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <input class="btn btn-primary" type="submit" value="save">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+--}}
 
 
 <div class="incentive">

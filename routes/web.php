@@ -98,3 +98,8 @@ Route::post('paypal', array('as' => 'paypal','uses' => 'PaypalController@postPay
 // route for check status responce
 Route::get('paypal', array('as' => 'status','uses' => 'PaypalController@getPaymentStatus',));
 
+
+
+// route for reviews
+
+Route::resource('reviews', 'reviewsController');

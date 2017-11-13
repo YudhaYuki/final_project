@@ -10,7 +10,9 @@
         "laravel/framework": "5.5.*",
         "laravel/tinker": "~1.0",
         "guzzlehttp/guzzle": "~5.2",
+        "laravelcollective/html":"^5.4.0",
         "paypal/rest-api-sdk-php": "*"
+        
     },
     "require-dev": {
         "filp/whoops": "~2.0",
@@ -53,9 +55,13 @@
         ]
     },
     "config": {
+        "platform": {
+            "php": "7.0"
+        },
         "preferred-install": "dist",
         "sort-packages": true,
         "optimize-autoloader": true
     }
+    
    
 }

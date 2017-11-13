@@ -19,15 +19,12 @@ class CreateReviewsTable extends Migration
             $table->string('name');
             $table->string('email');
             $table->text('comment');
-            $table->boolean('approved');
             $table->integer('activity_id')->unsigned();
             $table->integer('user_id')->unsigned();
             
-            $table->timestamps();
-        });
 
-        Schema::table('reviews', function ($table) {
-            $table->foreign('activity_id')->references('id')->on('activities')->onDelete('cascade');
+
+            $table->timestamps();
         });
     }
 
@@ -38,7 +35,6 @@ class CreateReviewsTable extends Migration
      */
     public function down()
     {
-        Schema::dropForeign(['activity_id']);
         Schema::dropIfExists('reviews');
     }
 }
