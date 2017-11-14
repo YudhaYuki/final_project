@@ -165,7 +165,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
 
         // Adding on 12 Nov
-        // Collective\Html\HtmlServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
 
         /*
          * Package Service Providers...

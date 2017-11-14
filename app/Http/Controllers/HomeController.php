@@ -11,6 +11,11 @@ use Session;
 
 class HomeController extends Controller
 {
+
+    public function __construct()
+    {
+        
+    }
     /**
      * Create a new controller instance.
      *
