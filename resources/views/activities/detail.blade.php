@@ -34,6 +34,8 @@
 </div>
 @endif
 
+<div class="container">
+
 <div class="row">
     <div class="col-md-8 col-md-offset-2">
         @foreach($activity->comments as $comment)
@@ -46,19 +48,18 @@
 </div>
 
 
-<div class="container">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-12">
             <div id="review-form">
                 {{ Form::open(['route' => ['comments.store', $activity->id], 'method' => 'POST']) }}
                     
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             {{ Form::label('full_name', "Full Name:") }}
                             {{ Form::text('full_name', null, ['class' => 'form-controller']) }}
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             {{ Form::label('email', "Email:") }}
                             {{ Form::text('email', null, ['class' => 'form-controller']) }}
                         </div>
