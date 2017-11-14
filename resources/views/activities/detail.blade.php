@@ -18,7 +18,8 @@
                 <p><strong>Price</strong></p>
                     {{ $activity->price }}
                 <p><strong>Activity Category ID</strong></p>
-                    {{ $activity->category->name }}
+                    {{ $activity->category ? $activity->category->name : '' }}
+    
             </p><br>
         </div>
     </div>
@@ -34,6 +35,39 @@
 </div>
 @endif
 
+<div class="container">
+    <div class="row comments-bdo mt-5">
+        <div class="col-md-12">
+            <div id="review-form">
+                {{ Form::open(['route' => ['comments.store', $activity->id], 'method' => 'POST']) }}
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            {{ Form::label('full_name', "Full Name:") }}<br>
+                            {{ Form::text('full_name', null, ['class' => 'form-controller']) }}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center bdo-field">
+                            {{ Form::label('email', "Email:") }}<br>
+                            {{ Form::text('email', null, ['class' => 'form-controller']) }}
+                        </div>
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 mb-5 text-center">
+                            {{ Form::label('comment', "Comment:") }}<br>
+                            {{ Form::textarea('comment', null, ['class' => 'form-controller']) }}
+
+                            {{ Form::submit('Add Review', ['class' => 'btn btn-success btn-block', 'style' => 'margin-top:15px;']) }}
+                        </div>
+                    </div>
+
+                {{ Form::close() }}
+            </div>
+        </div>
+    </div>
+</div> 
+
 <div class="row">
     <div class="col-md-8 col-md-offset-2">
         @foreach($activity->comments as $comment)
@@ -46,79 +80,8 @@
 </div>
 
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div id="review-form">
-                {{ Form::open(['route' => ['comments.store', $activity->id], 'method' => 'POST']) }}
-                    
-                    <div class="row">
-                        <div class="col-md-6">
-                            {{ Form::label('full_name', "Full Name:") }}
-                            {{ Form::text('full_name', null, ['class' => 'form-controller']) }}
-                        </div>
-
-                        <div class="col-md-6">
-                            {{ Form::label('email', "Email:") }}
-                            {{ Form::text('email', null, ['class' => 'form-controller']) }}
-                        </div>
-
-                        <div class="col-md-12">
-                            {{ Form::label('comment', "Comment:") }}
-                            {{ Form::textarea('comment', null, ['class' => 'form-controller']) }}
-
-                            {{ Form::submit('Add Review', ['class' => 'btn btn-success btn-block', 'style' => 'margin-top:15px;']) }}
-                        </div>
-
-                    </div>
-
-                {{ Form::close() }}
-            </div>
-        </div>
-    </div>
-</div> 
 
 
-
-{{-- 
-<div class="container mt-5 mb-5">
-    <div class="row">
-        <div class="col-md-12 mt-5 mb-5">
-            <div class="form-register">
-                <h3>Add Review:</h3><br>
-                <form action="{{ route('reviews.store') }}" enctype="multipart/form-data" method="post">
-
-                    {{ csrf_field() }}
-
-                    <input type="hidden" name="activity_category_id" value="Activity">
-                    <input type="hidden" name="activity_id" value="{{ $activity->id }}">
-
-
-                    <div class="form-group">
-                        <label for="name">Name:</label><br>
-                        <input class="form-control" type="text" name="name" value="" id="name">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email:</label><br>
-                        <input class="form-control" type="email" name="email" value="" id="email">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="comment">Comment:</label><br>
-                        <textarea class="form-control" name="comment" value="" id="comment"> </textarea>
-                    </div>
-
-                    <div class="form-group">
-                        <input class="btn btn-primary" type="submit" value="save">
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
---}}
 
 
 <div class="incentive">

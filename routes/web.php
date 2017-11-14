@@ -90,15 +90,5 @@ Route::get('/activity_categories/activity_category/{id}', 'activity_categoryCont
 
 
 
-
-// route for view/blade file
-Route::get('paywithpaypal', array('as' => 'paywithpaypal','uses' => 'PaypalController@payWithPaypal',));
-// route for post request
-Route::post('paypal', array('as' => 'paypal','uses' => 'PaypalController@postPaymentWithpaypal',));
-// route for check status response
-Route::get('paypal', array('as' => 'status','uses' => 'PaypalController@getPaymentStatus',));
-
-
-
 // route for comments
 Route::post('comments/{activity_id}', ['uses' => 'commentsController@store', 'as' =>'comments.store']);
