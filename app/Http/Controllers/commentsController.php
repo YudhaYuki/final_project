@@ -57,7 +57,7 @@ class commentsController extends Controller
 
         Session::flash('success', 'Comment was added');
 
-        // return redirect()->route(['activityController@listing'], ['id' => $activity->id]);
+        return redirect()->route('activity detail', ['id' => $activity->id]);
     
     }
 
