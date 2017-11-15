@@ -28,7 +28,7 @@
                                 </div>
                             </div>
                             <div class="col-md-4">
-                            <label for="groupSize">Group Size</label>
+                            <label for="groupSize">Day</label>
                                     <input type="date" class="form-control" id="datepicker">
                             </div>
                             <div class="col-md-4">

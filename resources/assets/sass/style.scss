@@ -16,6 +16,45 @@
     background-size: cover;
 }
 
+.bdo-login-btn1 a{
+    color: #fff;
+}
+
+.bdo-login-btn2 a{
+    color: #730074;
+}
+
+.bdo-login-btn2 {
+    margin-left: 5px;
+    background: transparent;
+    border: 1px solid #730074;
+    
+}
+
+.bdo-login-btn1 {
+    background-color:#730074; 
+    border: #730074;
+}
+
+.bdo-login-btn1:hover {
+    background: transparent; 
+    border: 1px solid #730074;
+}
+
+.bdo-login-btn1 a:hover {
+    color: #730074; 
+    text-decoration: none;
+}
+
+.bdo-login-btn2:hover {
+    background-color:#730074;
+}
+
+.bdo-login-btn2 a:hover {
+    color:#fff;
+    text-decoration: none;
+}
+
 
 .form {
     background: #fff;
@@ -368,6 +407,10 @@
 
 .bdo-faq-headings a {
     color: #68b828; 
+}
+
+.links .fa {
+    font-size: 2em;
 }
 
 

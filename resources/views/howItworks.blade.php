@@ -98,35 +98,35 @@
                 </div>
             </div>
         </div>
-        <div class="row mt-5">
+        <div class="row mt-5 mb-5">
             <div class="col-md-2">
                 <div class="text-center bdo-active-examples">
-                    <img class="img-fluid" src="/images/prague-1119791_1280.jpg" alt="">
+                    <img class="img-fluid" src="/images/boat.jpg" alt="">
                 </div>
             </div>
             <div class="col-md-2 img-fluid">
                 <div class="text-center bdo-active-examples">
-                 <img class="img-fluid" src="/images/prague-1119791_1280.jpg" alt="">
+                 <img class="img-fluid" src="/images/crawl.jpg" alt="">
                 </div>
             </div>
             <div class="col-md-2 img-fluid">
                 <div class="text-center bdo-active-examples">
-                 <img class="img-fluid" src="/images/prague-1119791_1280.jpg" alt="">
+                 <img class="img-fluid" src="/images/foot.jpg" alt="">
                 </div>
             </div>
             <div class="col-md-2 img-fluid">
                 <div class="text-center bdo-active-examples">
-                 <img class="img-fluid" src="/images/prague-1119791_1280.jpg" alt="">
+                 <img class="img-fluid" src="/images/climbing.jpg" alt="">
                 </div>
             </div>
             <div class="col-md-2 img-fluid">
                 <div class="text-center bdo-active-examples">
-                 <img class="img-fluid" src="/images/prague-1119791_1280.jpg" alt="">
+                 <img class="img-fluid" src="/images/golf.jpg" alt="">
                 </div>
             </div>
             <div class="col-md-2 img-fluid">
                 <div class="text-center bdo-active-examples">
-                 <img class="img-fluid" src="/images/prague-1119791_1280.jpg" alt="">
+                 <img class="img-fluid" src="/images/run.jpg" alt="">
                 </div>
             </div>
         </div>

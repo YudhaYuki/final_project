@@ -66,8 +66,9 @@
                   <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
                         @guest
-                            <li><a href="{{ route('login') }}">Login</a></li>
-                            <li><a href="{{ route('register') }}">Register</a></li>
+                            <button type="button" class="btn btn-primary bdo-login-btn1"><a href="{{ route('login') }}">Login</a></button>
+                            <button type="button" class="btn btn-primary bdo-login-btn2"><a href="{{ route('register') }}">Register</a></button>
+                            <li></li>
                         @else
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -92,7 +93,7 @@
                     </ul>
 
 
-            <ul class="navbar-nav justify-content-end">
+            <!--<ul class="navbar-nav justify-content-end">
                 <li class="nav-item">
                 <a class="nav-link" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                 </li>
@@ -102,13 +103,13 @@
                 <li class="nav-item">
                 <a class="nav-link bump-to-left" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                 </li>
-            </ul>
+            </ul>-->
          
             <div class="login-links">
                     @if (Route::has('login'))
                         <div class="top-right links">
                             @auth
-                                <a href="{{ url('/home') }}">Dashboard<!--{{ Auth::user()->name.' '. Auth::user()->surname }}--></a>
+                                <a href="{{ url('/home') }}"><i class="fa fa-home" aria-hidden="true"></i><!--{{ Auth::user()->name.' '. Auth::user()->surname }}--></a>
                             @else
                                 <!--<a href="{{ route('login') }}">Login</a>
                                 <a href="{{ route('register') }}">Register</a>-->
