@@ -21,6 +21,20 @@ class activityController extends Controller
             
             return $view;
         }
+
+        public function suggest()
+        {
+            $text = request()->input('t', null);
+            $movies = Movie::where('title', 'like', '%'.$text.'%')
+                        ->orderBy('title', 'asc')
+                        ->limit(20)
+                        ->get();
+                    
+            return $movies;
+        }
+
+
+
     
         /**
          * detail of a movie

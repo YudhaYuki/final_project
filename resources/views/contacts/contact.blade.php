@@ -2,53 +2,42 @@
 
 @section('content')
 
-
-
-<body>
-<div class="container">
-	<section id="contact">
-		<div class="section-content">
-			<h1 class="section-header">Any Questions? Get in touch.</h1>
-		</div>
+<div class="section-content">
+            <h1 class="section-header">Any Questions? Get in touch.</h1>
+        </div>
         <div class="form-contact">
-			<div class="container">
-				<form action="{{ url('contact') }}" method="POST">
-                {{ csrf_field() }}
+            <div class="container">
+               <form action="{{ url('contact') }}" method="POST">
+                    {{ csrf_field() }}
 
-					<div class="row">
-						<div class="col-md-6 form-line">
-							<div class="form-group">
-								<label for="full_name">Your name</label>
-								<input type="text" class="form-control" name="full_name" id="full_name" placeholder="Enter Name">
-							</div>
-
+                    <div class="row">
+                        <div class="col-md-6 form-line">
                             <div class="form-group">
-								<label for="email">Email Address</label>
-								<input type="email" class="form-control" id="email" name="email" placeholder="Enter Email">
-							</div>
-
-                            <div class="form-group">
-								<label for="subject">Subject</label>
-								<input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject">
-							</div>
-						</div>
-                        <div class="col-md-6">
-							<div class="form-group">
-								<label for="message">Message</label>
-								<textarea class="form-control" name="message" value="" id="message" cols="50" placeholder="Enter Your Message"></textarea>
-							</div>
-                            <div>
-								<button type="submit" class="btn btn-default submit"><i class=" fa fa-paper-plane" aria-hidden="true"></i>Send Message</button>
+                                <label for="inputUsername">Your name</label>
+                                <input type="text" class="form-control" id="" placeholder="Enter Name">
                             </div>
-						</div>
-					</div>
-				</form>
-			</div>
-		</div>
-	</section>
-    </div>
-</body>
-
+                            <div class="form-group">
+                                <label for="inputEmail">Email Address</label>
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Enter Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputSubject">Subject</label>
+                                <input type="text" class="form-control" id="inputEmail" placeholder="Enter Subject">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="description">Message</label>
+                                <textarea class="form-control" id="description" placeholder="Enter Your Message"></textarea>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-default submit"><i class=" fa fa-paper-plane" aria-hidden="true"></i>Send Message</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
 
 @endsection
 

@@ -54,10 +54,17 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/activities/listing', 'activityController@listing');
 
+
+// Search activity
+
+Route::post('/activities/search', 'activityController@search');
+
 Route::get('/activities/activity/{id}', 'activityController@detail')->name('activity detail');
 
 Route::get('/activities/new', 'activityController@create')->middleware('auth');
 Route::post('/activities/new', 'activityController@store')->middleware('auth');
+
+// giving authority only to admin
 Route::get('/activities/edit/{id}', 'activityController@edit')->middleware('auth', 'can:admin');
 Route::post('/activities/edit/{id}', 'activityController@store')->middleware('auth');
 
@@ -87,6 +94,16 @@ Route::post('activity_categories/edit/{id}', 'activity_categoryController@store'
 
 Route::get('/activity_categories/list', 'activity_categoryController@listing');
 Route::get('/activity_categories/activity_category/{id}', 'activity_categoryController@detail')->name('activityCategory detail');
+
+
+
+
+// route for view/blade file
+Route::get('paywithpaypal', array('as' => 'paywithpaypal','uses' => 'PaypalController@payWithPaypal',));
+// route for post request
+Route::post('paypal', array('as' => 'paypal','uses' => 'PaypalController@postPaymentWithpaypal',));
+// route for check status response
+Route::get('paypal', array('as' => 'status','uses' => 'PaypalController@getPaymentStatus',));
 
 
 
