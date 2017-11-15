@@ -62,12 +62,9 @@
                 <div class="ActivityInfo">
                 <i class="fa fa-ravelry" aria-hidden="true"></i><br>
                     <h4>Activity Information</h4>
-                    <ol>
-                        <li>Activity 1</li>
-                        <li>Activity 2</li>
-                        <li>Activity 3</li>
-                        <li>Activity 4</li>
-                    </ol>
+                    @foreach($activities as $activity)
+                     {{ $activity->name }}<br>
+                    @endforeach
                 </div>
             </div>
             <div class="col-md-3 text-center mt-2">
@@ -75,7 +72,6 @@
                 <i class="fa fa-comments-o" aria-hidden="true"></i><br>
                     <h4>Messages</h4>
                     <ol>
-                        <li>Message</li>
                         <li>Message</li>
                         <li>Message</li>
                         <li>Message</li>

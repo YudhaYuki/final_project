@@ -246,13 +246,6 @@
   font-size: 0.9em;
 }
 
-.bdo-login-form {
-  width: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .dashboard {
   background-color: #202020;
   color: #fff;
@@ -307,6 +300,17 @@
 }
 
 #bdo-login-form {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #730074;
+  color: #fff;
+  padding: 2%;
+  border-radius: 3%;
+}
+
+#bdo-register-form {
   width: 50%;
   display: block;
   margin-left: auto;
@@ -388,6 +392,24 @@
   color: #730074;
 }
 
+.bdo-contact-form {
+  background-color: #730074;
+  color: #fff;
+  padding: 2%;
+  border-radius: 3%;
+}
+
+.bdo-send {
+  color: #fff;
+  background-color: #68b828;
+}
+
+.bdo-send:hover {
+  color: #fff;
+  background: transparent;
+  border: 1px solid #6CFF19;
+}
+
 .bdo-faq-headings a {
   color: #68b828;
 }
@@ -460,6 +482,55 @@
 
   #bdo-login-form {
     width: 90%;
+  }
+
+  #bdo-register-form {
+    width: 90%;
+  }
+
+  .bdo-login-btn2 {
+    width: 28%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bdo-login-btn1 {
+    width: 28%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    width: 35%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 545px) {
+  .form {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+  .form {
+    width: 80%;
+  }
+
+  .bdo-btn {
+    margin-top: 21%;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  .bdo-btn {
+    margin-top: 16%;
   }
 }
 

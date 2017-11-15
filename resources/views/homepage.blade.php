@@ -26,12 +26,12 @@
                                         <option>5</option>
                                     </select>
                                 </div>
-                            </div>
-                            <div class="col-md-4">
+                            </div><br>
+                            <div class="col-md-4 col-12">
                             <label for="groupSize">Day</label>
                                     <input type="date" class="form-control" id="datepicker">
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-12">
                                 <a href="{{ action('activityController@listing') }}" class="btn btn-primary bdo-btn">Let's Go</a>
                             <div>
                         </div>
