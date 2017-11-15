@@ -7,7 +7,7 @@
  
 @section('content')
 <div section="dashboard">
-    <div class="container-fluid bdo-login">
+    <div class="container-fluid bdo-login dashboard">
         <div class="row">
             <div class="col-md-12 mt-5 bdo-login">
                 <div class="panel panel-default mb-5 mt-3">
@@ -27,6 +27,9 @@
         </div>
     </div>
 
+
+    
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-3 ">
@@ -35,7 +38,7 @@
                         <a class="nav-link" href="{{ action('activityController@create') }}">Add New Activity</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Add New Activity Category</a>
+                        <a class="nav-link" href="{{ action('activity_categoryController@create') }}">Add New Activity Category</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Edit User Info</a>
@@ -49,12 +52,9 @@
                 <div class="userInfo">
                     <i class="fa fa-users" aria-hidden="true"></i><br>
                     <h4>User Information</h4>
-                    <ol>
-                        <li>Current User Stats</li>
-                        <li>Activities booked</li>
-                        <li>Profiles</li>
-                        <li>Edit User</li>
-                    </ol>
+                        @foreach($activities as $activity)
+                            {{ $activity->name }}<br>
+                        @endforeach
                 </div>
                 
             </div>

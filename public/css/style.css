@@ -335,6 +335,25 @@
   font-family: 'Gloria Hallelujah', cursive;
 }
 
+.bdo-jumbo {
+  background-color: #730074;
+  font-family: 'Permanent Marker', cursive;
+  color: #fff;
+}
+
+.bdo-nav-faq {
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.bdo-accord {
+  font-family: 'Gloria Hallelujah', cursive;
+  color: #730074;
+}
+
+.bdo-faq-headings a {
+  color: #68b828;
+}
+
 /*************************************************************************************/
 
 @media (max-width: 34em) {
@@ -402,65 +421,3 @@
   }
 }
 
-/* Contact Form */
-.section-header {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 45px;
-    padding-top: 60px;
-    width: 100%;
-    height: 200px;
-    background-color: #6CFF19;
-}
-
-.section-content {
-  text-align: center;
-}
-
-/*#contact {
-  font-family: 'Overpass', sans-serif;
-  padding-top: 60px;
-  width: 100%;
-  height: 500px;
-}
-*/
-
-.form-contact {
-  padding-top: 5px;
-}
-.form-contact .col-md-6{
-  width: 50%;
-}
-
-.form-line{
-  border-right: 1px solid black;
-}
-
-.form-group{
-  margin-top: 10px;
-}
-label{
-  font-size: 1em;
-  line-height: 1em;
-  font-weight: normal;
-}
-
-.form-control{
-  font-size: 1.3em;
-}
-textarea.form-control {
-    height: 135px;
-}
-
-.submit{
-  font-size: 1.1em;
-  float: right;
-  width: 150px;
-  background-color: transparent;
-}
-
-#register label {
-  font-family: 'Overpass', sans-serif;
-  padding-top: 60px;
-  width: 100%;
-  height: 500px;
-}

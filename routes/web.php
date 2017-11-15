@@ -54,6 +54,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/activities/listing', 'activityController@listing');
 
+Route::get('/home', 'activityController@dash');
+
 
 // Search activity
 
