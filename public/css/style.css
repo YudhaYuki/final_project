@@ -279,13 +279,60 @@
   border-radius: 3%;
 }
 
-/** login form *****************************************/
+/** howitworks *****************************************/
 
 .bdo-login-heading {
   font-family: 'Gloria Hallelujah', cursive;
   margin-left: 3%;
   margin-bottom: 2%;
   font-size: 2em;
+}
+
+.bdo-how-head h2 {
+  font-size: 3em;
+  font-family: 'Permanent Marker', cursive;
+  color: #fff;
+  text-align: center;
+}
+
+.howitworks {
+  background: url(/images/prague-2093627_1920.jpg) no-repeat center center fixed;
+  padding: 130px 0;
+  background-size: cover;
+}
+
+.fun-people {
+  background: url(/images/people-821624_1920.jpg) no-repeat center center;
+  padding: 230px 0;
+  background-size: cover;
+}
+
+.how-banner {
+  background-color: #730074;
+  height: 200px;
+  color: #fff;
+}
+
+.process-desc .fa {
+  font-size: 3.6em;
+  color: #730074;
+}
+
+.process-desc h3 {
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.process-desc {
+  padding: 5%;
+}
+
+.bdo-process {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.bdo-process h4 {
+  color: #68b828;
+  font-family: 'Gloria Hallelujah', cursive;
 }
 
 /*************************************************************************************/
@@ -348,6 +395,10 @@
   .bdo-why {
     margin: 5% 0 5% 0;
     font-family: 'Gloria Hallelujah', cursive;
+  }
+
+  #bdo-login-form {
+    width: 90%;
   }
 }
 
