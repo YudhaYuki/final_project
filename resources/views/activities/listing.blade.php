@@ -12,13 +12,12 @@
             </div>
             <div class="col-md-12">
                 <div class="search-activity text-center mt-5 mb-5">
-                        <input type="text" id="search"/><br><br>
-                        <button id="btn"> Search activity </button>
+                        <input type="text" id="search_activity" name="search_activity"/><br><br>
+                        <button id="search_activity"> Search activity </button>
                 </div>
             </div>
         </div>
 </div><!-- closes container -->
-
 
 <div class="container">
     <div class="row">
@@ -43,10 +42,6 @@
                     </div>
                 </div>
             </div>
-
-        
-            
-        
         <!-- 
         <li>
             <a href="{{ route('activity detail', ['id' => $activity->id]) }}">
@@ -55,6 +50,45 @@
         </li> 
         -->
         @endforeach
+
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+<script>
+  $(function() {
+    var suggest_value = null; // current value of #suggest input
+    $('#suggest').on('keyup focus blur change', function(ev) {
+        if($(this).val() != suggest_value) { // if the current value of #suggest changed
+            suggest_value = $(this).val(); // update the current value of #suggest
+            // load data from API
+            $.ajax({
+                method: 'get',
+                url: '{{ action('Api\ActivityController@suggest') }}',
+                dataType: 'json',
+                data: {
+                    't': suggest_value
+                },
+                success: function(data, status) {
+                    // empty the select field
+                    $('#movie_select').empty();
+                    $.each(data, function(key, value) {
+                        // create an option element
+                        var option = $('<option value="'+value.id+'">'+value.title+'</option>');
+                        // append the option to the select
+                        $('#movie_select').append(option);
+                    });
+                }
+            })
+            // generate the list of options
+        }
+    });
+});
+    </script>
 
     </div><!-- closes row -->
 </div><!-- closes container -->
@@ -165,60 +199,6 @@
 </div>  
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-
-
-<script>
-
-$('#btn').click(function() {
-
-            var s = $('#search').val();
-            
-            $.ajax({
-                'url': '/activities/search',
-                'type': 'post',
-                'data' : {
-                    'search' : s
-                }
-            }).done(function(data){
-
-                console.log(data.length);
-
-                $('ul').empty();
-
-                for(var i = 0; i < data.length; i++) {
-                    $('ul').append(
-                        '<li>'+ 
-                            '<a href="">' + data[i].name + '(' +data[i].picture+ ')</a>'+ 
-                         '</li>'
-                    );
-                }
-            });
-
-            // console.log(s);
-        });
-
-</script>
 @endsection
 
 </div>
