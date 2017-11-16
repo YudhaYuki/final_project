@@ -18,7 +18,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 
-Route::get('activity/suggest', 'Api\ActivityController@suggest');
+Route::get('activity/suggest', 'activityController@suggest');
 
 Route::resource('movie', 'Api\MovieController', [
     'except' => ['create', 'edit']

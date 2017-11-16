@@ -25,12 +25,12 @@ class activityController extends Controller
         public function suggest()
         {
             $text = request()->input('t', null);
-            $movies = Movie::where('title', 'like', '%'.$text.'%')
-                        ->orderBy('title', 'asc')
+            $activities = Activity::where('name', 'like', '%'.$text.'%')
+                        ->orderBy('name', 'asc')
                         ->limit(20)
                         ->get();
                     
-            return $movies;
+            return $activities;
         }
 
 

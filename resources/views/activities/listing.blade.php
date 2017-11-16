@@ -54,34 +54,30 @@
 
 
 
-<script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-
 <script>
   $(function() {
     var suggest_value = null; // current value of #suggest input
-    $('#suggest').on('keyup focus blur change', function(ev) {
+    $('#search_activity').on('keyup focus blur change', function(ev) {
         if($(this).val() != suggest_value) { // if the current value of #suggest changed
             suggest_value = $(this).val(); // update the current value of #suggest
             // load data from API
+            console.log($);
             $.ajax({
                 method: 'get',
-                url: '{{ action('Api\ActivityController@suggest') }}',
+                url: '{{ action('activityController@suggest') }}',
                 dataType: 'json',
                 data: {
                     't': suggest_value
                 },
                 success: function(data, status) {
                     // empty the select field
-                    $('#movie_select').empty();
-                    $.each(data, function(key, value) {
-                        // create an option element
-                        var option = $('<option value="'+value.id+'">'+value.title+'</option>');
-                        // append the option to the select
-                        $('#movie_select').append(option);
-                    });
+                    // $('#movie_select').empty();
+                    // $.each(data, function(key, value) {
+                    //     // create an option element
+                    //     var option = $('<option value="'+value.id+'">'+value.title+'</option>');
+                    //     // append the option to the select
+                    //     $('#movie_select').append(option);
+                    // });
                 }
             })
             // generate the list of options

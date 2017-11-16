@@ -61,6 +61,7 @@ Route::get('/home', 'activityController@dash');
 
 Route::post('/activities/search', 'activityController@search');
 
+
 Route::get('/activities/activity/{id}', 'activityController@detail')->name('activity detail');
 
 Route::get('/activities/new', 'activityController@create')->middleware('auth');
