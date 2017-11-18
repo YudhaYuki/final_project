@@ -15,11 +15,14 @@
                     {{ $activity->description }}
                 <p><strong>Provider</strong></p>
                     {{ $activity->company_provider }}
+                
+                @if(Auth::check() && (Auth::user()->isManagers() ||  Auth::user()->isEmployees()))
                 <p><strong>Price</strong></p>
                     {{ $activity->price }}
+                @endif
+                
                 <p><strong>Activity Category ID</strong></p>
                     {{ $activity->category ? $activity->category->name : '' }}
-    
             </p><br>
         </div>
     </div>

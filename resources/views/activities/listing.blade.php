@@ -119,6 +119,7 @@
                     't': suggest_value
                 },
                 success: function(data, status) {
+                    console.log(data);
                     // empty the select field
                     // $('#movie_select').empty();
                     // $.each(data, function(key, value) {

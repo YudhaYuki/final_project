@@ -28,7 +28,7 @@
     </div>
 
 
-    
+    @if(Auth::check() && (Auth::user()->isManagers() ||  Auth::user()->isEmployees()))
 
     <div class="container-fluid">
         <div class="row">
@@ -80,5 +80,9 @@
             </div>
         </div>
     </div>
+
+    @endif
+
+
 </div>
 @endsection
