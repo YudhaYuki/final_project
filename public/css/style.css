@@ -110,7 +110,7 @@
 }
 
 .bdo-card-text a {
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Overpass';
   color: #730074;
 }
 
@@ -167,7 +167,7 @@
 
 .bdo-why {
   margin: 40% 0 40% 0;
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Overpass';
 }
 
 .bdo-why span {
@@ -286,7 +286,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Overpass';
 }
 
 .form-controller {
@@ -324,10 +324,10 @@
 /** howitworks *****************************************/
 
 .bdo-login-heading {
-  font-family: 'Gloria Hallelujah', cursive;
-  margin-left: 3%;
+  font-family: 'Permanent Marker', cursive;
+  margin-left: 5.5%;
   margin-bottom: 2%;
-  font-size: 2em;
+  font-size: 4em;
 }
 
 .bdo-how-head h2 {
@@ -361,7 +361,7 @@
 }
 
 .process-desc h3 {
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Overpass',
 }
 
 .process-desc {
@@ -374,7 +374,7 @@
 
 .bdo-process h4 {
   color: #68b828;
-  font-family: 'Gloria Hallelujah', cursive;
+ /* font-family: 'Gloria Hallelujah', cursive; */
 }
 
 .bdo-jumbo {
@@ -384,11 +384,11 @@
 }
 
 .bdo-nav-faq {
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Overpass',
 }
 
 .bdo-accord {
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Overpass';
   color: #730074;
 }
 
@@ -477,7 +477,7 @@
 
   .bdo-why {
     margin: 5% 0 5% 0;
-    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Overpass';
   }
 
   #bdo-login-form {
