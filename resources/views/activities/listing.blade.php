@@ -4,19 +4,68 @@
 
 <div class="container">
         <div class="row">
+
             <div class="col-md-12">
                 <div class="listing-heading text-center mt-5">
                         <h1>List of activities</h1>
                         <p>Deselect activities you're not fond of here</p>
                 </div>
             </div>
+
+            <div class="col-md-12">
+            <form action="">
+            {{ csrf_field() }}
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Select your budget (€)</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>50</option>
+                        <option>100</option>
+                        <option>150</option>
+                        <option>200</option>
+                        <option>250</option>
+                        <option>300</option>
+                        <option>350</option>
+                        <option>400</option>
+                        <option>450</option>
+                        <option>500</option>
+                        <option>550</option>
+                        <option>600</option>
+                        <option>650</option>
+                        <option>700</option>
+                        <option>750</option>
+                        <option>800</option>
+                        <option>850</option>
+                        <option>900</option>
+                        <option>950</option>
+                        <option>1000</option>
+                    </select>
+                </div>
+            </form>
+            </div>
+
             <div class="col-md-12">
                 <div class="search-activity text-center mt-5 mb-5">
                         <input type="text" id="search_activity" name="search_activity"/><br><br>
                         <button id="search_activity"> Search activity </button>
                 </div>
             </div>
-        </div>
+
+            {{-- 
+            <div class="col-md-12">
+            <form action="">
+            {{ csrf_field() }}
+                <div class="form-group">
+                <label for="activity_category_id_select">Sort activity by category below</label><br>
+                    <select class="form-control" name="activity_category_id" id="activity_category_id_select">
+                        @foreach($activityCategories as $activityCategory)
+                            <option value="{{ $activityCategory->id }}"{{ $activityCategory->id == $activity->activity_category_id ? ' selected' : '' }}>{{ $activityCategory->name }}</option>
+                        @endforeach
+                    </select>
+                </div>
+            </form>
+            </div>
+            --}}
+
 </div><!-- closes container -->
 
 <div class="container">

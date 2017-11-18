@@ -18,6 +18,8 @@ class activityController extends Controller
     
             $all_activities = Activity::orderBy('name', 'asc')->get();
             $view->activities = $all_activities;
+
+            // $view->activityCategories = \App\Activity_Category::all(); 
             
             return $view;
         }
