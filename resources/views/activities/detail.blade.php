@@ -20,8 +20,8 @@
                 <p><strong>Price</strong></p>
                     {{ $activity->price }}
                 @endif
-                
-                <p><strong>Activity Category ID</strong></p>
+
+                <p><strong>Activity Category </strong></p>
                     {{ $activity->category ? $activity->category->name : '' }}
             </p><br>
         </div>
@@ -71,14 +71,17 @@
     </div>
 </div> 
 
-<div class="row">
-    <div class="col-md-8 col-md-offset-2">
-        @foreach($activity->comments as $comment)
-            <div class="comment">
-                <p><strong>Name: </strong> {{ $comment->full_name }} </p>
-                <p><strong>Comment:</strong><br/> {{ $comment->comment }} </p> <br><br>
-            </div>
-        @endforeach
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            @foreach($activity->comments as $comment)
+                <div class="comment">
+                    <p><strong>Name: </strong> {{ $comment->full_name }} </p>
+                    <p><strong>Comment:</strong><br/> {{ $comment->comment }} </p>
+                    <p><strong>Posted on:</strong> {{ $comment->created_at }} </p>
+                </div>
+            @endforeach
+        </div>
     </div>
 </div>
 

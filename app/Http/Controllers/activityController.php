@@ -192,35 +192,6 @@ class activityController extends Controller
     
             // redirect somewhere
         }
-    
-        /**
-         * inserts a record in the movies table for testing purposes
-         */
-        public function test_insert()
-        {
-            // create an object of the model class
-            // $movie = new \App\Movie();
-            $activity = new Activity();
-    
-            // modify it's properties
-            $activity->name = 'LEGO Jewish History Private Tour';
-            $activity->price = 2017;
-            $activity->description = 'Join me for a unique private tour tailored around you! We will explore the former Jewish ghetto and I will give you all the insights. I will tell you lots of stories about the history of the area and point out the main landmarks. The Holocaust has left a deep mark on Prague. 
-            
-            Start your tour in the Old Town and join discovering the history behind it. Hear the great tales of this area and learn about the local lifestyle.
-            
-            We ll walk through the Old Jewish Cemetery, home to around 12,000 tombs. Let me tell you about the famous figures buried here and their lives.
-            
-            You will not miss the Old New Synagogue which dates from 1270 and s rumored to hold the body of the mythical Golem. End your tour back in Old Town and ask me for further recommendations before we say goodbye to each other.
-            
-            Let me know if you have any questions or want to change something in our itinerary and I will do my best to adjust the tour according to your wishes!';
-    
-            // save the object
-            // $movie->save();
-    
-            // happily inform the user
-            return 'Activity was saved!';
-        }
     }
     
 

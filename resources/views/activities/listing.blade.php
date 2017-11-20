@@ -11,7 +11,7 @@
                         <p>Deselect activities you're not fond of here</p>
                 </div>
             </div>
-
+{{--
             <div class="col-md-12">
             <form action="">
             {{ csrf_field() }}
@@ -42,6 +42,7 @@
                 </div>
             </form>
             </div>
+--}}
 
             <div class="col-md-12">
                 <div class="search-activity text-center mt-5 mb-5">
