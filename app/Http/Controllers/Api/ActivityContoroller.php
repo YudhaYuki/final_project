@@ -72,12 +72,12 @@ class ActivityController extends Controller
     public function show($id)
     {
         //
-        $movie = Movie::find($id);
-        if($movie)
+        $activity = Activity::find($id);
+        if($activity)
         {
             // output the movie object as JSON string 
             // and use the default HTTP code 200 (OK)
-            return $movie;
+            return $activity;
         }
         else
         {

@@ -12,6 +12,41 @@
                 </div>
             </div>
 
+
+
+            
+            <div class="col-md-12">
+            <form action="">
+            {{ csrf_field() }}
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Maximum budget (€)</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>50</option>
+                        <option>100</option>
+                        <option>150</option>
+                        <option>200</option>
+                        <option>250</option>
+                        <option>300</option>
+                        <option>350</option>
+                        <option>400</option>
+                        <option>450</option>
+                        <option>500</option>
+                        <option>550</option>
+                        <option>600</option>
+                        <option>650</option>
+                        <option>700</option>
+                        <option>750</option>
+                        <option>800</option>
+                        <option>850</option>
+                        <option>900</option>
+                        <option>950</option>
+                        <option>1000</option>
+                    </select>
+                </div>
+            </form>
+            </div>
+            
+
             <div class="col-md-12">
                 <div class="search-activity text-center mt-5 mb-5">
                         <input type="text" id="search_activity" name="search_activity"/><br><br>
