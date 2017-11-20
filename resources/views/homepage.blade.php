@@ -16,24 +16,26 @@
                         
                         <div class="row">
                             <div class="col-md-4 col-12">
-                                <div class="form-group bdo-group">
-                                <label for="groupSize">Group Size</label>
-                                    <select class="form-control" id="exampleFormControlSelect1">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                </div>
-                            </div><br>
-                            <div class="col-md-4 col-12">
-                            <label for="groupSize">Day</label>
-                                    <input type="date" class="form-control" id="datepicker">
-                            </div>
-                            <div class="col-md-4 col-12">
-                                <a href="{{ action('activityController@listing') }}" class="btn btn-primary bdo-btn">Let's Go</a>
-                            <div>
+                                <form action="GET">
+                                    <div class="form-group bdo-group">
+                                    <label for="groupSize">Group Size</label>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    </div><br>
+                                    <div class="col-md-4 col-12 datepicker-bdo">
+                                    <label for="groupSize">Day</label>
+                                        <input type="text" id="datepicker">
+                                    </div>
+                                    <div class="col-md-4 col-12">
+                                        <a href="{{ action('activityController@listing') }}" class="btn btn-primary bdo-btn">Let's Go</a>
+                                    <div>
+                                </form>
                         </div>
                     </div>
                 </div>
