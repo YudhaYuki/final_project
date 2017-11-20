@@ -22,6 +22,21 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.bdo-login-permission {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #6CFF19;
+  border-radius: 4px;
+  padding: 0.2%;
+  border: 1px solid #730074;
+  color: #fff;
+}
+
+.bdo-options {
+  height: 100px;
+}
+
 .bdo-login-btn2 a {
   color: #730074;
   font-family: 'Montserrat', sans-serif;
@@ -421,7 +436,7 @@
 }
 
 .links .fa {
-  font-size: 2em;
+  font-size: 2.2em;
 }
 
 /*************************************************************************************/
