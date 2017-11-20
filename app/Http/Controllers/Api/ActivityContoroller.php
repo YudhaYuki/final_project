@@ -28,13 +28,27 @@ class ActivityController extends Controller
     public function suggest()
     {
         $text = request()->input('t', null);
+        $price_cap = request()->input('cap', null);
+        $nr_of_people = request()->input('ppl', null);
+        $date = request()->input('date', null);
+    
+        // $sortBy = null;
+        
+        // $activities = DB::table('activitiess')
+        //                 ->when($sortBy, function ($query) use ($sortBy) {
+        //                     return $query->orderBy($sortBy);
+        //                 }, function ($query) {
+        //                     return $query->orderBy('name');
+        //                 })
+        //                 ->get();
 
-        $movies = Movie::where('title', 'like', '%'.$text.'%')
-                    ->orderBy('title', 'asc')
+
+        $activities = Activity::whereNull('t', 'cap', 'ppl', 'date', '%'.$text.'%')
+                    ->orderBy('name', 'cap', 'ppl', 'asc')
                     ->limit(20)
                     ->get();
-                
-        return $movies;
+ 
+        return $activities;
     }
 
     /**

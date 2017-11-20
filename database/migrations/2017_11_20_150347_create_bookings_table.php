@@ -15,14 +15,16 @@ class CreateBookingsTable extends Migration
     {
         Schema::create('bookings', function (Blueprint $table) {
             $table->increments('id');
+
+            $table->integer('number_of_participant')->unsigned();
+            $table->date('date_of_birth')->nullable();
             $table->integer('user_id')->unsigned()->nullable();
-            $table->integer('booking_id')->unsigned()->nullable();
-            $table->integer('number_of_participants')->unsigned()->nullable();
-            $table->datetime('start_date')->nullable();
-            $table->datetime('end_date')->nullable();
-            $table->integer('activity_slot_id')->unsigned()->nullable();
-            $table->integer('willingness_to_pay')->unsigned()->nullable();
+            $table->integer('payment_id')->unsigned()->nullable();
+            $table->integer('activity_id')->unsigned()->nullable();
+
             $table->timestamps();
+
+            
         });
     }
 
