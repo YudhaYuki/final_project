@@ -1,11 +1,14 @@
-
 .navbar {
     width: 100%;
     background: #fff !important;
     padding: 2%;
     z-index: 10;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-   }
+}
+
+.bdo-nav a {
+    font-family: 'Montserrat', sans-serif;
+}
 
 .hero {
     background: url(/images/prague-1119791_1280.jpg) no-repeat center center fixed;
@@ -16,56 +19,56 @@
     background-size: cover;
 }
 
-.bdo-login-btn1 a{
+.bdo-login-btn1 a {
     color: #fff;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.bdo-login-btn2 a{
+.bdo-login-btn2 a {
     color: #730074;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .bdo-login-btn2 {
     margin-left: 5px;
     background: transparent;
     border: 1px solid #730074;
-    
 }
 
 .bdo-login-btn1 {
-    background-color:#730074; 
+    background-color: #730074;
     border: #730074;
 }
 
 .bdo-login-btn1:hover {
-    background: transparent; 
+    background: transparent;
     border: 1px solid #730074;
 }
 
 .bdo-login-btn1 a:hover {
-    color: #730074; 
+    color: #730074;
     text-decoration: none;
 }
 
 .bdo-login-btn2:hover {
-    background-color:#730074;
+    background-color: #730074;
 }
 
 .bdo-login-btn2 a:hover {
-    color:#fff;
+    color: #fff;
     text-decoration: none;
 }
-
 
 .form {
     background: #fff;
     opacity: 0.9;
     padding: 40px 30px 40px 30px;
     margin-top: 7%;
-    width:50%;
+    width: 50%;
     height: 300px;
     display: block;
     margin-left: auto;
-    margin-right:auto;
+    margin-right: auto;
 }
 
 .bdo-banner {
@@ -86,15 +89,15 @@
     font-size: 3em;
 }
 
-#datepicker{
+#datepicker {
     width: 190px;
 }
 
-.bdo-btn{
+.bdo-btn {
     background-color: #6CFF19;
     width: 100px;
     margin-left: 20px;
-    margin-top:22%;
+    margin-top: 22%;
     opacity: 2;
 }
 
@@ -115,7 +118,7 @@
 }
 
 .bdo-card-text a {
-    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Montserrat', sans-serif;
     color: #730074;
 }
 
@@ -127,22 +130,22 @@
     background-color: #730074;
 }
 
-.search-activity #btn{
+.search-activity #btn {
     border-radius: 10px;
     border: 1px solid #6CFF19;
-    padding:10px;
+    padding: 10px;
     background-color: #730074;
-    color:#fff;
+    color: #fff;
 }
 
-.search-activity #btn:hover{
+.search-activity #btn:hover {
     background-color: #6CFF19;
 }
 
 .bdo-next {
     background-color: #6CFF19;
     width: 150px;
-    float:right;
+    float: right;
 }
 
 .bdo-learn {
@@ -157,7 +160,7 @@
 
 .steps .fa {
     font-size: 1.6em;
-    color:#730074;
+    color: #730074;
 }
 
 .incentive {
@@ -172,17 +175,17 @@
 
 .bdo-why {
     margin: 40% 0 40% 0;
-    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.bdo-why span{
+.bdo-why span {
     font-size: 3em;
     font-family: 'Permanent Marker', cursive;
     color: #6CFF19;
 }
 
-.footer-links a{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.footer-links a {
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.8em;
     color: #730074;
 }
@@ -195,20 +198,19 @@
     position: relative;
 }
 
-.wrap:hover{
-    .image-overlay{
+.wrap:hover {
+    .image-overlay {
         opacity: .8;
         display: block;
     }
 }
 
 .wrap.click_overlay {
-    .image-overlay{
+    .image-overlay {
         opacity: .8;
         display: block;
     }
 }
-
 
 .image-overlay {
     opacity: 0;
@@ -229,6 +231,7 @@
     text-decoration: none;
     color: #fff;
 }
+
 .removed p {
     color: #fff;
 }
@@ -244,75 +247,76 @@
     position: relative;
 }
 
-.login-links{
+.login-links {
     position: absolute;
     top: 0px;
     right: 5%;
 }
 
-.links a{
+.links a {
     color: #730074;
     font-size: 0.9em;
 }
 
-.dashboard{
+.dashboard {
     background-color: #202020;
-    color:#fff;
+    color: #fff;
 }
 
 .userInfo {
     background-color: #de1771;
-    color:#fff;
+    color: #fff;
     padding: 6%;
 }
 
 .ActivityInfo {
     background-color: #4e8ef7;
-    color:#fff;
+    color: #fff;
     padding: 6%;
 }
+
 .Messages {
     background-color: #ffba00;
-    color:#fff;
+    color: #fff;
     padding: 6%;
 }
 
-.bdo-dash-nav{
+.bdo-dash-nav {
     background-color: #68b828;
-    color:#fff;
-    
-}
-.bdo-dash-nav a{
-    color:#fff;
-    border: 1px solid #fff;
-    
+    color: #fff;
 }
 
+.bdo-dash-nav a {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
 /** comments form *****************************************/
+
 .comments-bdo {
     width: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    font-family: 'Gloria Hallelujah', cursive;
-    
+    font-family: 'Montserrat', sans-serif;
 }
 
-.form-controller{
+.form-controller {
     width: 100%;
     border-radius: 2px;
-  
 }
 
- #email, #full_name{
+#email,
+#full_name {
     height: 35px;
 }
 
 #bdo-login-form {
-    width:50%;
+    width: 50%;
     display: block;
     margin-left: auto;
-    margin-right:auto;
+    margin-right: auto;
     background-color: #730074;
     color: #fff;
     padding: 2%;
@@ -320,25 +324,27 @@
 }
 
 #bdo-register-form {
-    width:50%;
+    width: 50%;
     display: block;
     margin-left: auto;
-    margin-right:auto;
+    margin-right: auto;
     background-color: #730074;
     color: #fff;
     padding: 2%;
     border-radius: 3%;
 }
 
+
 /** howitworks *****************************************/
+
 .bdo-login-heading {
-    font-family: 'Gloria Hallelujah', cursive;  
+    font-family: 'Montserrat', sans-serif;
     margin-left: 3%;
     margin-bottom: 2%;
     font-size: 2em;
 }
 
-.bdo-how-head h2{
+.bdo-how-head h2 {
     font-size: 3em;
     font-family: 'Permanent Marker', cursive;
     color: #fff;
@@ -371,11 +377,11 @@
 
 .process-desc .fa {
     font-size: 3.6em;
-    color:#730074;
+    color: #730074;
 }
 
-.process-desc h3{
-    font-family: 'Gloria Hallelujah', cursive;
+.process-desc h3 {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .process-desc {
@@ -388,7 +394,7 @@
 
 .bdo-process h4 {
     color: #68b828;
-    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .bdo-jumbo {
@@ -398,15 +404,15 @@
 }
 
 .bdo-nav-faq {
-    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .bdo-accord {
-    font-family: 'Gloria Hallelujah', cursive;
-    color:#730074;
+    font-family: 'Montserrat', sans-serif;
+    color: #730074;
 }
 
-.bdo-contact-form{
+.bdo-contact-form {
     background-color: #730074;
     color: #fff;
     padding: 2%;
@@ -425,7 +431,7 @@
 }
 
 .bdo-faq-headings a {
-    color: #68b828; 
+    color: #68b828;
 }
 
 .links .fa {
@@ -433,170 +439,104 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*************************************************************************************/
 
 @media (max-width: 34em) {
-        
-.form {
-    padding: 10px 10px 10px 10px;
-    width:95%;
-    height: 300px;
-    display: block;
-    margin-left: auto;
-    margin-right:auto;
+    .form {
+        padding: 10px 10px 10px 10px;
+        width: 95%;
+        height: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bdo-banner h1 {
+        font-size: 1.0em;
+    }
+    #datepicker {
+        width: 75%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bdo-btn {
+        width: 75%;
+        margin-left: 0;
+        margin-top: 2%;
+        opacity: 2;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    label {
+        font-size: 12px;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bdo-group {
+        width: 75%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .steps .bdo-banner h2 {
+        color: #6CFF19;
+        font-size: 1.8em;
+    }
+    h3 {
+        font-size: 1.1em;
+    }
+    .bdo-why {
+        margin: 5% 0 5% 0;
+        font-family: 'Gloria Hallelujah', cursive;
+    }
+    #bdo-login-form {
+        width: 90%;
+    }
+    #bdo-register-form {
+        width: 90%;
+    }
+    .bdo-login-btn2 {
+        width: 28%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bdo-login-btn1 {
+        width: 28%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        width: 35%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
 }
 
-.bdo-banner h1{
-    font-size: 1.0em;
-}
-
-#datepicker{
-    width: 75%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.bdo-btn{
-    width: 75%;
-    margin-left: 0;
-    margin-top:2%;
-    opacity: 2;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-label {
-    font-size: 12px;
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.bdo-group {
-    width: 75%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.steps .bdo-banner h2 {
-    color: #6CFF19;
-    font-size: 1.8em;
-}
-h3 {
-    font-size: 1.1em;
-}
-
-.bdo-why {
-    margin: 5% 0 5% 0;
-    font-family: 'Gloria Hallelujah', cursive;
-}
-
-#bdo-login-form {
-    width:90%;
-}
-
-#bdo-register-form {
-    width:90%;
-}
-
-.bdo-login-btn2{
-    width:28%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.bdo-login-btn1{
-    width:28%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5px;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    width:35%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
-    text-align: center;
-}
-
-}
-
-
-@media screen and (max-width: 768px) and (min-width: 545px){
-    
+@media screen and (max-width: 768px) and (min-width: 545px) {
     .form {
         height: 500px;
     }
-
 }
 
-@media screen and (max-width: 1200px) and (min-width: 768px){
-    
+@media screen and (max-width: 1200px) and (min-width: 768px) {
     .form {
         width: 80%;
     }
-    .bdo-btn{
-        margin-top:21%;
+    .bdo-btn {
+        margin-top: 21%;
     }
-
 }
 
-@media screen and (max-width: 1200px) and (min-width: 992px){
-    
-    .bdo-btn{
-        margin-top:16%;
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+    .bdo-btn {
+        margin-top: 16%;
     }
-
 }
-
-
-
-
-
-
