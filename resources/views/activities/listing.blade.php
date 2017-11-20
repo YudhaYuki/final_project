@@ -11,12 +11,13 @@
                         <p>Deselect activities you're not fond of here</p>
                 </div>
             </div>
-{{--
+
+            
             <div class="col-md-12">
             <form action="">
             {{ csrf_field() }}
                 <div class="form-group">
-                    <label for="exampleFormControlSelect1">Select your budget (€)</label>
+                    <label for="exampleFormControlSelect1">Maximum budget (€)</label>
                     <select class="form-control" id="exampleFormControlSelect1">
                         <option>50</option>
                         <option>100</option>
@@ -42,7 +43,7 @@
                 </div>
             </form>
             </div>
---}}
+            
 
             <div class="col-md-12">
                 <div class="search-activity text-center mt-5 mb-5">
