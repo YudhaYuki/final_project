@@ -232,19 +232,6 @@
   background: #730074;
 }
 
-#remove_activity p {
-  z-index: 2;
-  padding-top: 100px;
-  display: block;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #fff;
-}
-
-.removed p {
-  color: #fff;
-}
-
 .form-register {
   width: 70%;
   display: block;
@@ -301,14 +288,6 @@
 }
 
 /** comments form *****************************************/
-
-.comments-bdo {
-  width: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: 'Montserrat', sans-serif;
-}
 
 .form-controller {
   width: 100%;
@@ -548,13 +527,3 @@
   }
 }
 
-/* Checkout rules */
-.checkout-body {
-  box-sizing: border-box;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  background: #f4f4f4;
-  justify-content: center;
-  align-items: center;
-}

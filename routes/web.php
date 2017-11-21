@@ -57,8 +57,9 @@ Route::get('/activities/listing', 'activityController@listing');
 Route::get('/home', 'activityController@dash');
 
 // added 19/11/2017 
+Route::get('/payment', 'HomeController@payment');
+Route::post('/payment', 'HomeController@payment');
 
-Route::get('/payment', 'HomeController@PaypalController');
 
 
 
@@ -103,15 +104,6 @@ Route::post('activity_categories/edit/{id}', 'activity_categoryController@store'
 Route::get('/activity_categories/list', 'activity_categoryController@listing');
 Route::get('/activity_categories/activity_category/{id}', 'activity_categoryController@detail')->name('activityCategory detail');
 
-
-
-
-// route for view/blade file
-Route::get('paywithpaypal', array('as' => 'paywithpaypal','uses' => 'PaypalController@payWithPaypal',));
-// route for post request
-Route::post('paypal', array('as' => 'paypal','uses' => 'PaypalController@postPaymentWithpaypal',));
-// route for check status response
-Route::get('paypal', array('as' => 'status','uses' => 'PaypalController@getPaymentStatus',));
 
 
 

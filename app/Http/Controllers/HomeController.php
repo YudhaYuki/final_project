@@ -42,6 +42,11 @@ class HomeController extends Controller
         return view('faq');
     }
 
+    public function payment()
+    {
+        return view('payment');
+    }
+
     public function how()
     {
         return view('howItworks');
