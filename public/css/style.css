@@ -458,6 +458,40 @@
   border-left: thin solid #68b828;
 }
 
+.bdo-tag {
+  background-color: #730074;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+}
+
+.bdo-sell {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-transform: uppercase;
+}
+
+.bdo-sell h4 {
+  font-size: 4em;
+}
+
+.sell-heading {
+  margin-left: 20%;
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 300;
+}
+
+.sell-heading2 {
+  margin-left: 20%;
+  color: #68b828;
+}
+
+.bdo-tag2 {
+  background: url(/images/city-1940691_1920.jpg) no-repeat center center fixed;
+  padding: 130px 0;
+  background-size: cover;
+}
+
 /*************************************************************************************/
 
 @media (max-width: 34em) {

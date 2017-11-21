@@ -137,6 +137,25 @@
     </div>
 </div>
 
+<div class="selling">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 bdo-tag">
+                <div class="bdo-sell">
+                    <h4 class="sell-heading">Suprise Yourself.</h4><br>
+                    <h4 class="sell-heading2">Make it a <br> big day out.</h4>
+                </div>
+            </div>
+            <div class="col-md-6 bdo-tag2">
+                <div class="bdo-sell2">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 <div class="footer">
     <div class="container">
