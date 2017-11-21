@@ -1,4 +1,3 @@
-
 console.log('testing');
 
 $('.wrap').click(function() {
@@ -7,7 +6,5 @@ $('.wrap').click(function() {
 
 
 $( function() {
-    console.log('HERE');
     $( "#datepicker" ).datepicker();
     } );
-  

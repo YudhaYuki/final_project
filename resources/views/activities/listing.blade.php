@@ -12,11 +12,14 @@
                 </div>
             </div>
 
+
+
+            
             <div class="col-md-12">
             <form action="">
             {{ csrf_field() }}
                 <div class="form-group">
-                    <label for="exampleFormControlSelect1">Select your budget (€)</label>
+                    <label for="exampleFormControlSelect1">Maximum budget (€)</label>
                     <select class="form-control" id="exampleFormControlSelect1">
                         <option>50</option>
                         <option>100</option>
@@ -42,6 +45,7 @@
                 </div>
             </form>
             </div>
+            
 
             <div class="col-md-12">
                 <div class="search-activity text-center mt-5 mb-5">
@@ -49,39 +53,21 @@
                         <button id="search_activity"> Search activity </button>
                 </div>
             </div>
-
-            {{-- 
-            <div class="col-md-12">
-            <form action="">
-            {{ csrf_field() }}
-                <div class="form-group">
-                <label for="activity_category_id_select">Sort activity by category below</label><br>
-                    <select class="form-control" name="activity_category_id" id="activity_category_id_select">
-                        @foreach($activityCategories as $activityCategory)
-                            <option value="{{ $activityCategory->id }}"{{ $activityCategory->id == $activity->activity_category_id ? ' selected' : '' }}>{{ $activityCategory->name }}</option>
-                        @endforeach
-                    </select>
-                </div>
-            </form>
-            </div>
-            --}}
-
+        </div>
 </div><!-- closes container -->
 
 <div class="container">
     <div class="row">
         @foreach($activities as $activity)
-            
-            <div class="col-lg-4 col-sm-3 mb-5 text-center">
-                <div class="card" style="width: 20rem;">
+            <div class="col-md-4 col-12 mb-5 text-center">
+                <div class="card">
                     <div class="wrap">
                         <img class="card-img-top img-fluid" src="{{ asset('uploads/' .$activity->picture) }}" alt="Card image cap">
                         <div class="image-overlay click_overlay">
                             <div id="remove_activity">
                                 <p>REMOVE ACTIVITY</p>
-                                <p class="removed">ACTIVITY REMOVED</p>  
-                            </div>
-                            
+                                <!-- <p class="removed">ACTIVITY REMOVED</p> -->
+                            </div> 
                         </div>
                     </div>
                     <div class="card-body">
@@ -91,6 +77,14 @@
                     </div>
                 </div>
             </div>
+         @endforeach
+    </div><!-- closes row -->
+</div><!-- closes container -->
+
+
+
+
+
         <!-- 
         <li>
             <a href="{{ route('activity detail', ['id' => $activity->id]) }}">
@@ -98,12 +92,10 @@
             </a>
         </li> 
         -->
-        @endforeach
 
 
 
-
-<script>
+{{-- <script>
   $(function() {
     var suggest_value = null; // current value of #suggest input
     $('#search_activity').on('keyup focus blur change', function(ev) {
@@ -134,10 +126,9 @@
         }
     });
 });
-    </script>
+    </script> --}}
 
-    </div><!-- closes row -->
-</div><!-- closes container -->
+
 
 <div class="container">
 
