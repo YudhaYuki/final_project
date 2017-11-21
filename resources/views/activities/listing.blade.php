@@ -57,7 +57,7 @@
 </div><!-- closes container -->
 
 <div class="container">
-    <div class="row">
+    <div class="row" id="activities">
         @foreach($activities as $activity)
             <div class="col-md-4 col-12 mb-5 text-center">
                 <div class="card">
@@ -82,18 +82,18 @@
 </div><!-- closes container -->
 
 
-
-
-
-        <!-- 
-        <li>
-            <a href="{{ route('activity detail', ['id' => $activity->id]) }}">
-                {{ $activity->name }} <img src="{{ asset('uploads/' .$activity->picture) }}"> ({{ $activity->price }})
-            </a>
-        </li> 
-        -->
-
-
+<script src="/js/js.cookie.js"></script>
+<script src="/js/filterPage.js"></script>
+<script>
+var fp = new filterPage({
+    nr_of_people: {{ intval(request()->input('participants', null)) }}, // number of people for searched activities
+    date: '{{ request()->input('date', null) }}', // date for searched activities
+    budget_select_id: 'exampleFormControlSelect1', // id of the budget select field
+    search_input_id: 'search_activity', // id of the search input field
+    activities_id: 'activities', // id of the container for activities
+    search_url: '{{ action('Api\ActivityController@filter') }}', // url where to search
+});
+</script>
 
 {{-- <script>
   $(function() {

@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Movie;
+use App\Activity;
 
 class ActivityController extends Controller
 {
@@ -25,7 +26,7 @@ class ActivityController extends Controller
         ];
     }
 
-    public function suggest()
+    public function filter()
     {
         $text = request()->input('t', null);
         $price_cap = request()->input('cap', null);
@@ -43,7 +44,8 @@ class ActivityController extends Controller
         //                 ->get();
 
 
-        $activities = Activity::whereNull('t', 'cap', 'ppl', 'date', '%'.$text.'%')
+        $activities = Activity::select('*')
+                    ->whereNull('t', 'cap', 'ppl', 'date', '%'.$text.'%')
                     ->orderBy('name', 'cap', 'ppl', 'asc')
                     ->limit(20)
                     ->get();
