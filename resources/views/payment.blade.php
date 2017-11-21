@@ -8,7 +8,7 @@
           <hr/>
           <h3 class="text-center">Billing Information</h3>
               <input type="hidden" name="paymentType" value="Sale"/>
-                <input type="hidden" name="id" value="<?php echo $_POST['id']; ?>"/>
+                <input type="hidden" name="id" value=""/>
                 <div class="form-group row">
                   <label for="firstName" class="col-2 col-form-label">First Name</label>
                   <div class="col-10">
@@ -83,7 +83,7 @@
                 <div class="form-group row">
                   <label for="amount" class="col-2 col-form-label">Amount(&#8364;)</label>
                   <div class="col-10">
-                    <input type="text" name="amount" id="name" placeholder="enter amount " value="<?php echo $p_price; ?>" disabled="true" class="form-control">
+                    <input type="text" name="amount" id="name" placeholder="enter amount " value="" disabled="true" class="form-control">
                   </div>
                 </div>
 
