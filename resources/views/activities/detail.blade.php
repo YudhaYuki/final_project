@@ -18,7 +18,8 @@
                 @if(Auth::check() && (Auth::user()->isManagers() ||  Auth::user()->isEmployees()))
                     <li class="list-group-item"><strong>€{{ $activity->price }}</strong></li>
                 @endif
-                <li class="list-group-item">{{ $activity->category ? $activity->category->name : '' }}</li>
+                <li class="list-group-item bdo-activity-cat">{{ $activity->category ? $activity->category->name : '' }}</li>
+                <li class="list-group-item"><a href="{{ action('activityController@listing') }}" class="btn btn-primary bdo-btn-listing">Remove activity</a></li>
             </ul>
             </div>
         </div>
