@@ -3,7 +3,7 @@
 @section('content')
 
 
-<div class="container">
+<div class="container-fluid">
 	<section id="contact">
 		<div class="section-content mt-5 ">
 			<h1 class="section-header bdo-login-heading">Any Questions? Get in touch.</h1>

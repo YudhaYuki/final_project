@@ -56,6 +56,11 @@ Route::get('/activities/listing', 'activityController@listing');
 
 Route::get('/home', 'activityController@dash');
 
+// added 19/11/2017 
+
+Route::get('/payment', 'HomeController@PaypalController');
+
+
 
 // Search activity
 
