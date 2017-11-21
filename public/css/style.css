@@ -335,6 +335,14 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.bdo-new-activity {
+  background-color: #730074;
+  color: #fff;
+  padding: 2%;
+  border-radius: 3%;
+  font-family: 'Montserrat', sans-serif;
+}
+
 #bdo-register-form {
   background-color: #730074;
   color: #fff;
@@ -602,28 +610,4 @@ label.star:before {
   content: '\F006';
   font-family: FontAwesome;
 }
-
-/* Payment form */
-#payment-content {
-  width: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #730074;
-  color: #fff;
-  padding: 2%;
-  border-radius: 3%;
-  font-family: Overpass;
-}
-#buynow{
-  background-color: #6CFF19;
-  width: 50%;
-  opacity: 2;
-}
-
-.buynow:hover {
-  background-color: #730074;
-}
-
-
 

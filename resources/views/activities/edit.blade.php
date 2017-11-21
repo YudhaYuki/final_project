@@ -2,10 +2,10 @@
 
 @section('content')
 
-<div class="container mt-5 mb-5">
+<div class="container mt-3 mb-5">
     <div class="row">
         <div class="col-md-12 mt-5 mb-5">
-            <div class="form-register">
+            <div class="form-register bdo-new-activity">
                 <h3>Add New Activity:</h3><br>
                 <form action="" enctype="multipart/form-data" method="post">
 
@@ -50,7 +50,7 @@
                      </div>
 
                     <div class="form-group">
-                        <input class="btn btn-primary" type="submit" value="save">
+                        <input class="btn btn-primary bdo-send" type="submit" value="save">
                     </div>
                 </form>
             </div>
