@@ -95,7 +95,7 @@
 
 
 
-<script>
+{{-- <script>
   $(function() {
     var suggest_value = null; // current value of #suggest input
     $('#search_activity').on('keyup focus blur change', function(ev) {
@@ -126,7 +126,7 @@
         }
     });
 });
-    </script>
+    </script> --}}
 
 
 

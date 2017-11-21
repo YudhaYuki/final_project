@@ -16,24 +16,29 @@
                         
                         <div class="row">
                             <div class="col-md-4 col-12">
-                                <form action="GET">
+                                <form action="{{ action('activityController@listing') }}" method="get">
                                     <div class="form-group bdo-group">
                                     <label for="groupSize">Group Size</label>
-                                        <select class="form-control" id="exampleFormControlSelect1">
+                                        <select class="form-control" name="participants" id="exampleFormControlSelect1">
                                             <option>1</option>
                                             <option>2</option>
                                             <option>3</option>
                                             <option>4</option>
                                             <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
                                         </select>
                                     </div>
                                     </div><br>
                                     <div class="col-md-4 col-12 datepicker-bdo">
                                     <label for="groupSize">Day</label>
-                                        <input type="text" id="datepicker">
+                                        <input name="date" type="text" id="datepicker">
                                     </div>
                                     <div class="col-md-4 col-12">
-                                        <a href="{{ action('activityController@listing') }}" class="btn btn-primary bdo-btn">Let's Go</a>
+                                        <button type="submit" class="btn btn-primary bdo-btn">Let's Go</button>
                                     <div>
                                 </form>
                         </div>
