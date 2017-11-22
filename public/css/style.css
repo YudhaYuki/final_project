@@ -593,6 +593,12 @@
   color: #fff;
 }
 
+.bdo-summary {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*************************************************************************************/
 
 @media (max-width: 34em) {

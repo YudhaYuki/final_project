@@ -3,9 +3,9 @@
 @section('content')
 
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-12 mt-5">
+<div class="container mb-5">
+    <div class="row mb-5">
+        <div class="col-md-8 mt-5 bdo-summary mb-5">
             <div class="card">
                 <ul class="list-group list-group-flush text-center">
                     <li class="list-group-item bdo-sum-heading">Order Summary</li>
