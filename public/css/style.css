@@ -529,6 +529,22 @@
   font-size: 3em;
 }
 
+.bdo-accordion {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bdo-accordion a {
+  color: #68b828;
+}
+
+.bdo-com-send {
+  background-color: #68b828;
+}
+
+.bdo-com-send:hover {
+  background-color: #730074;
+}
+
 /*************************************************************************************/
 
 @media (max-width: 34em) {

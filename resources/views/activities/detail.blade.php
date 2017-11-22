@@ -100,7 +100,7 @@
                             {{ Form::label('comment', "Comment:") }}<br>
                             {{ Form::textarea('comment', null, ['class' => 'form-controller']) }}
 
-                            {{ Form::submit('Add Review', ['class' => 'btn btn-success btn-block', 'style' => 'margin-top:15px;']) }}
+                            {{ Form::submit('Add Review', ['class' => 'btn btn-success btn-block bdo-com-send', 'style' => 'margin-top:15px;']) }}
                         </div>
 
                 {{ Form::close() }}
