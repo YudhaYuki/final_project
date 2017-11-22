@@ -429,10 +429,27 @@
 }
 
 .bdo-login-reg {
-  background-color: #730074;
+  background-color: #68b828;
   color: #fff;
   padding: 2%;
   border-radius: 3%;
+  height: 500px;
+}
+
+.bdo-send-reg {
+  background-color: #730074;
+}
+
+.bdo-send-reg:hover {
+  background-color: #68b828;
+}
+
+.bdo-forgot {
+  color: #730074;
+}
+
+.bdo-forgot:hover {
+  color: #730074;
 }
 
 .bdo-send {
