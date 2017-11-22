@@ -19,13 +19,33 @@
                     <li class="list-group-item"><strong>€{{ $activity->price }}</strong></li>
                 @endif
                 <li class="list-group-item bdo-activity-cat">{{ $activity->category ? $activity->category->name : '' }}</li>
-                <li class="list-group-item"><a href="{{ action('activityController@listing') }}" class="btn btn-primary bdo-btn-listing">Remove activity</a></li>
+                <li class="list-group-item"><a href="{{ action('activityController@listing') }}" class="btn btn-primary bdo-btn-listing">Remove activity</a>&nbsp;&nbsp;<a href="{{ action('activityController@listing') }}" class="btn btn-primary bdo-btn-listing">Back to activities list</a></li>
+                <li class="list-group-item">
+                    <div class="stars">
+                        <input class="star star-5" id="star-5" type="radio" name="star"/>
+                        <label class="star star-5" for="star-5"></label>
+
+                        <input class="star star-4" id="star-4" type="radio" name="star"/>
+                        <label class="star star-4" for="star-4"></label>
+
+                        <input class="star star-3" id="star-3" type="radio" name="star"/>
+                        <label class="star star-3" for="star-3"></label>
+
+                        <input class="star star-2" id="star-2" type="radio" name="star"/>
+                        <label class="star star-2" for="star-2"></label>
+
+                        <input class="star star-1" id="star-1" type="radio" name="star"/>
+                        <label class="star star-1" for="star-1"></label>
+                    </div>
+                </li>
             </ul>
             </div>
         </div>
         </div>
     </div>
 </div>
+
+
 
 @if(Auth::check() && (Auth::user()->isManagers() ||  Auth::user()->isEmployees()))
 <div class="container mt-5">
@@ -44,7 +64,7 @@
                 <div id="accordion" role="tablist" aria-multiselectable="true">
                 <div class="card">
                   <div class="card-header" role="tab" id="headingOne">
-                    <h5 class="mb-0">
+                    <h5 class="mb-0 bdo-accordion">
                       <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                       <i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp;{{ $comment->full_name }}
                       </a>
@@ -73,23 +93,6 @@
                             <i class="fa fa-share" aria-hidden="true"></i>
                             {{ Form::label('email', "Email:") }}<br>
                             {{ Form::text('email', null, ['class' => 'form-controller']) }}
-                        </div>
-
-                        <div class="stars">
-                            <input class="star star-5" id="star-5" type="radio" name="star"/>
-                            <label class="star star-5" for="star-5"></label>
-
-                            <input class="star star-4" id="star-4" type="radio" name="star"/>
-                            <label class="star star-4" for="star-4"></label>
-
-                            <input class="star star-3" id="star-3" type="radio" name="star"/>
-                            <label class="star star-3" for="star-3"></label>
-
-                            <input class="star star-2" id="star-2" type="radio" name="star"/>
-                            <label class="star star-2" for="star-2"></label>
-
-                            <input class="star star-1" id="star-1" type="radio" name="star"/>
-                            <label class="star star-1" for="star-1"></label>
                         </div>
                         
                         <div class="mb-5 text-center">
