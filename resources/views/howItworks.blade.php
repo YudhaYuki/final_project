@@ -99,34 +99,52 @@
             </div>
         </div>
         <div class="row mt-5 mb-5">
-            <div class="col-md-2">
+            <div class="col-md-2 overlay-container">
                 <div class="text-center bdo-active-examples">
                     <img class="img-fluid" src="/images/boat.jpg" alt="">
                 </div>
-            </div>
-            <div class="col-md-2 img-fluid">
-                <div class="text-center bdo-active-examples">
-                 <img class="img-fluid" src="/images/crawl.jpg" alt="">
+                <div class="overlay">
+                    <div class="text">Boat Tour</div>
                 </div>
             </div>
-            <div class="col-md-2 img-fluid">
+            <div class="col-md-2 overlay-container">
                 <div class="text-center bdo-active-examples">
-                 <img class="img-fluid" src="/images/foot.jpg" alt="">
+                    <img class="img-fluid" src="/images/crawl.jpg" alt="">
+                </div>
+                <div class="overlay">
+                    <div class="text">Pub Crawl</div>
                 </div>
             </div>
-            <div class="col-md-2 img-fluid">
+            <div class="col-md-2 overlay-container">
                 <div class="text-center bdo-active-examples">
-                 <img class="img-fluid" src="/images/climbing.jpg" alt="">
+                    <img class="img-fluid" src="/images/foot.jpg" alt="">
+                </div>
+                <div class="overlay">
+                    <div class="text">5 A Side</div>
                 </div>
             </div>
-            <div class="col-md-2 img-fluid">
+            <div class="col-md-2 overlay-container">
                 <div class="text-center bdo-active-examples">
-                 <img class="img-fluid" src="/images/golf.jpg" alt="">
+                    <img class="img-fluid" src="/images/climbing.jpg" alt="">
+                </div>
+                <div class="overlay">
+                    <div class="text">Climbing</div>
                 </div>
             </div>
-            <div class="col-md-2 img-fluid">
+            <div class="col-md-2 overlay-container">
                 <div class="text-center bdo-active-examples">
-                 <img class="img-fluid" src="/images/run.jpg" alt="">
+                    <img class="img-fluid" src="/images/golf.jpg" alt="">
+                </div>
+                <div class="overlay">
+                    <div class="text">Golf</div>
+                </div>
+            </div>
+            <div class="col-md-2 overlay-container">
+                <div class="text-center bdo-active-examples">
+                    <img class="img-fluid" src="/images/run.jpg" alt="">
+                </div>
+                <div class="overlay">
+                    <div class="text">Running</div>
                 </div>
             </div>
         </div>
