@@ -1,8 +1,8 @@
 @extends('wrapper')
 
 @section('content')
-  <div class="container-fluid">
-          <section id="payment-content">
+  <div class="container-fluid mt-5">
+      <section id="payment-content">
         <form action="DoDirectPayment.php" method="POST">
           <h2 class="text-center">Pay with debit or credit card</h2>
           <hr/>
@@ -130,9 +130,8 @@
                     <input type="text" name="phone" id="name" placeholder="Enter phone number " class="form-control">
                   </div>
                 </div>
-
-                <div class="text-center">
-                  <a href="#" class="btn bdo-btn" id="buynow">Pay Now</a>
+                <div class="goToRegister text-center mt-5 mb-5">
+                  <a href="{{ route('register') }}" class="btn btn-primary bdo-btn-reg">Pay Now</a>
                 </div>
       </section>
   </div> 

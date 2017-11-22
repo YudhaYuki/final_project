@@ -427,6 +427,14 @@
     color: #fff;
 }
 
+.bdo-jumbo h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bdo-jumbo .fa {
+    font-size: 3em;
+}
+
 .bdo-nav-faq {
     font-family: 'Montserrat', sans-serif;
 }
@@ -580,6 +588,18 @@ color:#68b828;
     background-color: #730074;
 }
 
+#payment-content h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#payment-content h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#payment-content a {
+    font-family: 'Montserrat', sans-serif;
+}
+
 /*************************************************************************************/
 
 @media (max-width: 34em) {
@@ -647,38 +667,38 @@ color:#68b828;
         margin-right: auto;
         margin-bottom: 5px;
     }
-    .navbar-light .navbar-nav .nav-link {
-        width: 35%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-    #exampleFormControlSelect1 {
-        width: 185px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #datepicker {
-    width: 185px;
-    margin-bottom: 5%;
+.navbar-light .navbar-nav .nav-link {
+    width: 35%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    }
-    .bdo-sell h4 {
-        font-size: 2em;
-        padding-top: 4%;
-    }
+    text-align: center;
+}
+#exampleFormControlSelect1 {
+    width: 185px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#datepicker {
+width: 185px;
+margin-bottom: 5%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+.bdo-sell h4 {
+    font-size: 2em;
+    padding-top: 4%;
+}
 
-    .sell-heading {
-        margin-left: 10%;
-     }
+.sell-heading {
+    margin-left: 10%;
+    }
      
-     .sell-heading2 {
-         margin-left: 10%;   
-      }
+.sell-heading2 {
+    margin-left: 10%;   
+}
 
     
 

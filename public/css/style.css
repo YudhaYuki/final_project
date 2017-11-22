@@ -412,6 +412,14 @@
   color: #fff;
 }
 
+.bdo-jumbo h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bdo-jumbo .fa {
+  font-size: 3em;
+}
+
 .bdo-nav-faq {
   font-family: 'Montserrat', sans-serif;
 }
@@ -560,6 +568,18 @@
 
 .bdo-com-send:hover {
   background-color: #730074;
+}
+
+#payment-content h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#payment-content h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#payment-content a {
+  font-family: 'Montserrat', sans-serif;
 }
 
 /*************************************************************************************/

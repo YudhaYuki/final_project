@@ -91,6 +91,7 @@
     <div class="container">
         <h1 class="display-5">Frequently asked questions</h1>
         <p class="lead text-white">What our customers often ask us</p>
+        <i class="fa fa-question-circle-o" aria-hidden="true"></i>
     </div>
 </div>
 
