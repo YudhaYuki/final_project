@@ -35,7 +35,7 @@
                                     </div><br>
                                     <div class="col-md-4 col-12 datepicker-bdo">
                                     <label for="groupSize">Day</label>
-                                        <input name="date" type="text" id="datepicker">
+                                        <input name="date" type="text" id="datepicker" placeholder="Date">
                                     </div>
                                     <div class="col-md-4 col-12">
                                         <button type="submit" class="btn btn-primary bdo-btn">Let's Go</button>
