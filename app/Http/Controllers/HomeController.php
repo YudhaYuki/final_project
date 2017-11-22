@@ -57,6 +57,11 @@ class HomeController extends Controller
         return view('contacts/contact');
     }
 
+    public function getSummary()
+    {
+        return view('summary');
+    }
+
     public function postContact(Request $request)
     {
         $this->validate($request, [

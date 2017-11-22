@@ -378,6 +378,12 @@
   background-size: cover;
 }
 
+.bdo-faq-fun {
+  background: url(/images/people-821624_1920.jpg) no-repeat center center fixed;
+  padding: 130px 0;
+  background-size: cover;
+}
+
 .how-banner {
   background-color: #730074;
   height: 200px;
@@ -580,6 +586,11 @@
 
 #payment-content a {
   font-family: 'Montserrat', sans-serif;
+}
+
+.bdo-sum-heading {
+  background-color: #730074;
+  color: #fff;
 }
 
 /*************************************************************************************/

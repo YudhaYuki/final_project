@@ -60,6 +60,9 @@ Route::get('/home', 'activityController@dash');
 Route::get('/payment', 'HomeController@payment');
 Route::post('/payment', 'HomeController@payment');
 
+Route::get('/summary', 'HomeController@getSummary');
+Route::post('/summary', 'HomeController@getSummary');
+
 
 
 
