@@ -51,7 +51,7 @@
             <div class="col-md-3 text-center mt-2">
                 <div class="userInfo">
                     <i class="fa fa-users" aria-hidden="true"></i><br>
-                    <h4>User Information</h4>
+                    <h4>USERS REGISTERED</h4>
                         @foreach($activities as $activity)
                             {{ $activity->name }}<br>
                         @endforeach
@@ -61,7 +61,7 @@
             <div class="col-md-3 text-center mt-2">
                 <div class="ActivityInfo">
                 <i class="fa fa-ravelry" aria-hidden="true"></i><br>
-                    <h4>Activity Information</h4>
+                    <h4>ACTIVITIES</h4>
                     @foreach($activities as $activity)
                      {{ $activity->name }}<br>
                     @endforeach
@@ -70,12 +70,27 @@
             <div class="col-md-3 text-center mt-2">
                 <div class="Messages">
                 <i class="fa fa-comments-o" aria-hidden="true"></i><br>
-                    <h4>Messages</h4>
+                    <h4>MESSAGES</h4>
                     <ol>
                         <li>Message</li>
                         <li>Message</li>
                         <li>Message</li>
                     </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="bdo-calendar">
+                
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="bdo-traffic">
+                
                 </div>
             </div>
         </div>

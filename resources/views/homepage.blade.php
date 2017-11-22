@@ -155,6 +155,34 @@
     </div>
 </div>
 
+<div class="booknow">
+    <div class="container-fluid mt-5 mb-5">
+        <div class="row mt-5 mb-5">
+            <div class="col-md-4 mt-5">
+                <div class="bdo-book text-center">
+                    <i class="fa fa-superpowers mb-2" aria-hidden="true"></i>
+                    <h4>THE BEST <br> ACTIVITIES</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A iure, rem sit harum, minima non dolor porro sunt iusto eaque ullam eveniet optio praesentium temporibus repellendus dolores reiciendis magni vel.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mt-5">
+                <div class="bdo-book2 text-center">
+                    <i class="fa fa-handshake-o mb-2" aria-hidden="true"></i>
+                    <h4>WE'LL HANDLE THE<br> LOGISTICS</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A iure, rem sit harum, minima non dolor porro sunt iusto eaque ullam eveniet optio praesentium temporibus repellendus dolores reiciendis magni vel.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mt-5">
+                <div class="bdo-book3 text-center">
+                    <i class="fa fa-calendar-plus-o mb-2" aria-hidden="true"></i>
+                    <h4>ANY DAY OF <br> THE WEEK</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A iure, rem sit harum, minima non dolor porro sunt iusto eaque ullam eveniet optio praesentium temporibus repellendus dolores reiciendis magni vel.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
 <div class="footer">

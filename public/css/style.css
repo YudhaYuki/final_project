@@ -497,6 +497,38 @@
   border-radius: 2px;
 }
 
+/**********************************BOOK NOW *****************************/
+
+.bdo-book {
+  background-color: #faba00;
+  color: #fff;
+  padding: 10% 15% 10% 15%;
+}
+
+.bdo-book .fa {
+  font-size: 3em;
+}
+
+.bdo-book2 {
+  background-color: #68b828;
+  color: #fff;
+  padding: 10% 15% 10% 15%;
+}
+
+.bdo-book2 .fa {
+  font-size: 3em;
+}
+
+.bdo-book3 {
+  background-color: #1bb3b5;
+  color: #fff;
+  padding: 10% 15% 10% 15%;
+}
+
+.bdo-book3 .fa {
+  font-size: 3em;
+}
+
 /*************************************************************************************/
 
 @media (max-width: 34em) {

@@ -27,7 +27,7 @@
                     </div>
 
                     @if($activity->getImageUrl())
-                        <img src="{{ $activity->getImageUrl() }}" />
+                        <img class="img-fluid" src="{{ $activity->getImageUrl() }}" />
                     @endif
 
                     <div class="form-group">
