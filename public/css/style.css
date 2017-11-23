@@ -439,7 +439,8 @@
   background-color: #730074;
   color: #fff;
   padding: 2%;
-  border-radius: 3%;
+  border-radius: 1%;
+  border: 2px solid #68b828;
 }
 
 .bdo-login-reg {
@@ -448,6 +449,7 @@
   padding: 2%;
   border-radius: 3%;
   height: 500px;
+  border: 2px solid #730074;
 }
 
 .bdo-send-reg {
