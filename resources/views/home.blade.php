@@ -52,19 +52,27 @@
                 <div class="userInfo">
                     <i class="fa fa-users" aria-hidden="true"></i><br>
                     <h4>USERS REGISTERED</h4>
-                        @foreach($activities as $activity)
-                            {{ $activity->name }}<br>
-                        @endforeach
+
+                    @foreach($users as $user)
+                            <a href="{{ route('user detail', ['id' => $user->id]) }}">
+                                {{ $user->name }} {{ $user->surname }} {{-- ({{ $permission_levels[$user->permission_level] }}) --}}
+                            </a> <br>
+                    @endforeach
+
                 </div>
-                
             </div>
+
             <div class="col-md-3 text-center mt-2">
                 <div class="ActivityInfo">
                 <i class="fa fa-ravelry" aria-hidden="true"></i><br>
                     <h4>ACTIVITIES</h4>
+
                     @foreach($activities as $activity)
-                     {{ $activity->name }}<br>
+                        <a href="{{ route('activity detail', ['id' => $activity->id]) }}">
+                            {{ $activity->name }}
+                        </a> <br>
                     @endforeach
+                    
                 </div>
             </div>
             <div class="col-md-3 text-center mt-2">

@@ -46,6 +46,9 @@ Route::get('/', 'indexController@homepage');
 Route::get('/faq', 'HomeController@faq');
 Route::get('/howItworks', 'HomeController@how');
 Route::get('/contact', 'HomeController@getContact');
+
+
+
 // added by yudha post for contact
 Route::post('/contact', 'HomeController@postContact');
 
@@ -55,6 +58,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/activities/listing', 'activityController@listing');
 
 Route::get('/home', 'activityController@dash');
+
+
 
 // added 19/11/2017 
 Route::get('/payment', 'HomeController@payment');
@@ -112,3 +117,5 @@ Route::get('/activity_categories/activity_category/{id}', 'activity_categoryCont
 
 // route for comments
 Route::post('comments/{activity_id}', ['uses' => 'commentsController@store', 'as' =>'comments.store']);
+
+

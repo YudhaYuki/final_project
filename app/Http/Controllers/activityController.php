@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Activity; // from now on \App\Movie will be accessible just with name Movie
 
+use App\User;
+
 class activityController extends Controller
 {
     //
@@ -66,6 +68,9 @@ class activityController extends Controller
     
             $all_activities = Activity::orderBy('name', 'asc')->get();
             $view->activities = $all_activities;
+
+            $all_users = User::orderBy('name', 'asc')->get();
+            $view->users = $all_users;
             
             return $view;
         }
