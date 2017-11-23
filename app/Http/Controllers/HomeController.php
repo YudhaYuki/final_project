@@ -45,6 +45,7 @@ class HomeController extends Controller
     public function payment()
     {
         return view('payment');
+
     }
 
     public function how()

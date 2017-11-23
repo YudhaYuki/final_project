@@ -18,7 +18,7 @@
                     <li class="list-group-item"><strong>Email:</strong><br>joe123@gmail.com</li>
                 </ul>
                 <div class="goToRegister text-center mt-5 mb-5">
-                  <a href="{{ route('register') }}" class="btn btn-primary bdo-btn-reg">Go To Payment</a>
+                  <a href="{{ action('HomeController@payment') }}" class="btn btn-primary bdo-btn-reg">Go To Payment</a>
                 </div>
             </div>
         </div>

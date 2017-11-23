@@ -181,7 +181,7 @@
 
                             <div class="form-group">
                                 <button type="submit" class="btn btn-primary bdo-send">
-                                    Register
+                                   Register
                                 </button>
                             </div>
             
