@@ -64,20 +64,21 @@
                         <input class="form-control" type="text" name="mobile_number" value="{{ $user->mobile_number }}" id="mobile_number">
                     </div>
 
+                    {{--
                     <div class="form-group">
                         <label for="is_admin">Is admin:</label><br>
                         <input class="form-control" type="is_admin" name="is_admin" id="is_admin">
                     </div>
+                    --}}
 
                     <div class="form-group">
-                        <label for="gender_id_select">Permission level:</label><br>
-                        <select class="form-control" name="permission_level_id" id="permission_level_id_select">
-                            @foreach($permission_levels as $permission_level_id => $permission_level_name)
-                                <option value="{{ $permission_level_id }}"{{ $permission_level_id == $user->permission_level_id ? ' selected' : '' }}>{{ $permission_level_name }}</option>
-                            @endforeach
-                        </select>
+                    <label for="permission_level_id_select">Permission level:</label><br>
+                    <select class="form-control" name="permission_level" id="permission_level_id_select">
+                        @foreach($permission_levels as $permission_level_id => $permission_level_name)
+                            <option value="{{ $permission_level_id }}"{{ $permission_level_id == $user->permission_level_id ? ' selected' : '' }}>{{ $permission_level_name }}</option>
+                        @endforeach
+                    </select>
                      </div>
-
 
                     <div class="form-group">
                         <input class="btn btn-primary bdo-send" type="submit" value="save">
