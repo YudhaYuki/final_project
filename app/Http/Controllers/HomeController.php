@@ -77,6 +77,7 @@ class HomeController extends Controller
             'subject' => $request->subject,
             'bodyMessage' => $request->message
         );
+
         
         Mail::send('emails.contact', $data, function($message) use ($data) {
             $message->from('bdoud2017@gmail.com');

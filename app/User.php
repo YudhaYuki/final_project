@@ -25,6 +25,10 @@ class User extends Authenticatable
         'mobile_number',
         'permission_level'
     ];
+
+    protected $attributes = [
+        'permission_level' => 3
+    ];
     
     /**
      * The attributes that should be hidden for arrays.

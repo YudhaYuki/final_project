@@ -223,6 +223,7 @@ class userController extends Controller
         $view = view('users/listing');
 
         $all_users = User::orderBy('name', 'asc')->get();
+        $view->permission_levels = userController::$permission_levels;
         $view->users = $all_users;
         
         return $view;

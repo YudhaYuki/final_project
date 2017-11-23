@@ -16,7 +16,7 @@
 @foreach($users as $user)
     <li>
         <a href="{{ route('user detail', ['id' => $user->id]) }}">
-            {{ $user->name }} {{ $user->surname }} ({{ $user->email }})
+            {{ $user->name }} {{ $user->surname }} ({{ $permission_levels[$user->permission_level] }})
         </a>
     </li>
 @endforeach
@@ -25,5 +25,4 @@
 @endsection
 
 </div>
-
 @section('page_title') List of users @endsection
