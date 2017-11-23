@@ -215,6 +215,22 @@ class userController extends Controller
         194 =>'Zimbabwean'
     ];
 
+
+
+
+    public function listing()
+    {
+        $view = view('users/listing');
+
+        $all_users = User::orderBy('name', 'asc')->get();
+        $view->users = $all_users;
+        
+        return $view;
+    }
+
+
+
+
         /**
      * create a new user
      */
@@ -278,17 +294,6 @@ class userController extends Controller
          // redirect
          return redirect()->action('userController@edit', ['id' => $user->id]);
      }
-
-
-    public function listing()
-    {
-        $view = view('users/listing'); // resources/views/  movies/listing  .blade.php
-
-        $all_users = User::orderBy('name', 'asc')->get();
-        $view->users = $all_users;
-        
-        return $view;
-    }
 
     /**
      * detail of a movie
