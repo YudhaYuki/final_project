@@ -659,6 +659,25 @@
   -ms-transform: translate(-50%, -50%);
 }
 
+.userInfo a {
+  color: #fff;
+}
+
+.ActivityInfo a {
+  color: #fff;
+}
+
+.bdo-edit-user-head {
+  background-color: #68b828;
+  color: #fff;
+}
+
+.bdo-edit-user {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*************************************************************************************/
 
 @media (max-width: 34em) {

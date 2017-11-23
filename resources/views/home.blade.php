@@ -54,6 +54,7 @@
                     <h4>USERS REGISTERED</h4>
 
                     @foreach($users as $user)
+                            <i class="fa fa-user" aria-hidden="true"></i>
                             <a href="{{ route('user detail', ['id' => $user->id]) }}">
                                 {{ $user->name }} {{ $user->surname }} {{-- ({{ $permission_levels[$user->permission_level] }}) --}}
                             </a> <br>
@@ -68,6 +69,7 @@
                     <h4>ACTIVITIES</h4>
 
                     @foreach($activities as $activity)
+                        <i class="fa fa-ravelry" aria-hidden="true"></i>
                         <a href="{{ route('activity detail', ['id' => $activity->id]) }}">
                             {{ $activity->name }}
                         </a> <br>
