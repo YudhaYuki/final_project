@@ -18,6 +18,8 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
+
+
     
 </head>
 <body> 
@@ -30,7 +32,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav ">
+    <div class="collapse navbar-collapse" id="navbarNav">
         
             <ul class="navbar-nav mx-auto bdo-nav">
                 <li class="nav-item active">
