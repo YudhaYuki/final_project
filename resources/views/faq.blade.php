@@ -131,84 +131,84 @@
         What's Big Day Out?</a>
         </h5>
     </div>
-<div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-<div class="card-body">
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</div>
-</div>
-</div>
-<div class="card">
-<div class="card-header" role="tab" id="headingTwo">
-<h5 class="mb-0">
-<a class="collapsed bdo-accord" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-How far in advance should I book?
-</a>
-</h5>
-</div>
-<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo " data-parent="#accordion">
-<div class="card-body">
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</div>
-</div>
-</div>
-<div class="card">
-<div class="card-header" role="tab" id="headingThree">
-<h5 class="mb-0">
-<a class="collapsed bdo-accord" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-Can I choose my destination?
-</a>
-</h5>
-</div>
-<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
-<div class="card-body">
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-</div>
-</div>
-</div>
+        <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+        <div class="card-body">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+        </div>
+        </div>
+        <div class="card">
+        <div class="card-header" role="tab" id="headingTwo">
+        <h5 class="mb-0">
+        <a class="collapsed bdo-accord" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        How far in advance should I book?
+        </a>
+        </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo " data-parent="#accordion">
+        <div class="card-body">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+        </div>
+        </div>
+        <div class="card">
+        <div class="card-header" role="tab" id="headingThree">
+        <h5 class="mb-0">
+        <a class="collapsed bdo-accord" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Can I choose my destination?
+        </a>
+        </h5>
+        </div>
+        <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+        <div class="card-body">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </div>
+        </div>
+        </div>
 </div>
 
 
 <div class="card">
-<div class="card-header" role="tab" id="headingFour">
-<h5 class="mb-0">
-<a class="collapsed bdo-accord" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-When will I know what I'm going to do?
-</a>
-</h5>
-</div>
-<div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
-<div class="card-body">
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</div>
-</div>
-</div>
-<div class="card">
-<div class="card-header" role="tab" id="headingFive">
-<h5 class="mb-0">
-<a class="collapsed bdo-accord" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-Do I need my passport or just my ID is fine?
-</a>
-</h5>
-</div>
-<div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion">
-<div class="card-body">
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-</div>
-</div>
-</div>
-<div class="card">
-<div class="card-header" role="tab" id="headingSix">
-<h5 class="mb-0">
-<a class="collapsed bdo-accord" data-toggle="collapse" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-What is the meal plan included?
-</a>
-</h5>
-</div>
-<div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingTSix" data-parent="#accordion">
-<div class="card-body">
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</div>
-</div>
+        <div class="card-header" role="tab" id="headingFour">
+        <h5 class="mb-0">
+        <a class="collapsed bdo-accord" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        When will I know what I'm going to do?
+        </a>
+        </h5>
+        </div>
+        <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
+        <div class="card-body">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+        </div>
+        </div>
+        <div class="card">
+        <div class="card-header" role="tab" id="headingFive">
+        <h5 class="mb-0">
+        <a class="collapsed bdo-accord" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+        Do I need my passport or just my ID is fine?
+        </a>
+        </h5>
+        </div>
+        <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion">
+        <div class="card-body">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+        </div>
+        </div>
+        </div>
+        <div class="card">
+        <div class="card-header" role="tab" id="headingSix">
+        <h5 class="mb-0">
+        <a class="collapsed bdo-accord" data-toggle="collapse" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+        What is the meal plan included?
+        </a>
+        </h5>
+        </div>
+        <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingTSix" data-parent="#accordion">
+        <div class="card-body">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+        </div>
 </div>
 
 
@@ -224,38 +224,38 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 <div id="collapseSeven" class="collapse" role="tabpanel" aria-labelledby="headingSeven" data-parent="#accordion">
     <div class="card-body">
     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</div>
-</div>
-</div>
-<div class="card">
-<div class="card-header" role="tab" id="headingEight">
-<h5 class="mb-0">
-<a class="collapsed bdo-accord" data-toggle="collapse" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-Can I be just by myself?
-</a>
-</h5>
-</div>
-<div id="collapseEight" class="collapse" role="tabpanel" aria-labelledby="headingEight" data-parent="#accordion">
-<div class="card-body">
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</div>
-</div>
-</div>
-<div class="card">
-<div class="card-header" role="tab" id="headingNine">
-<h5 class="mb-0 text-muted">
-<a class="collapsed bdo-accord" data-toggle="collapse" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-Can I give a Big Day Out without choosing a date?
-</a>
-</h5>
-</div>
-<div id="collapseNine" class="collapse" role="tabpanel" aria-labelledby="headingNine" data-parent="#accordion">
-<div class="card-body">
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</div>
-</div>
-</div>
-</div>
+        </div>
+        </div>
+        </div>
+        <div class="card">
+        <div class="card-header" role="tab" id="headingEight">
+        <h5 class="mb-0">
+        <a class="collapsed bdo-accord" data-toggle="collapse" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+        Can I be just by myself?
+        </a>
+        </h5>
+        </div>
+        <div id="collapseEight" class="collapse" role="tabpanel" aria-labelledby="headingEight" data-parent="#accordion">
+        <div class="card-body">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+        </div>
+        </div>
+        <div class="card">
+        <div class="card-header" role="tab" id="headingNine">
+        <h5 class="mb-0 text-muted">
+        <a class="collapsed bdo-accord" data-toggle="collapse" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+        Can I give a Big Day Out without choosing a date?
+        </a>
+        </h5>
+        </div>
+        <div id="collapseNine" class="collapse" role="tabpanel" aria-labelledby="headingNine" data-parent="#accordion">
+        <div class="card-body">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+        </div>
+        </div>
+        </div>
 </div>
 
 
@@ -359,7 +359,6 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
         </div>
     </div>
 </div>
-
 
 
 
